@@ -31,10 +31,10 @@ h| No. h| ISO class or attribute h| Type h| Value
 | --    | CI_Citation           | Class                          | --
 | 1     | title                 | CharacterString                | S-131 Portrayal Catalogue
 | 2     | date                  | CI_Date (class)                | --
-| 2.1   | date                  | DateTime                       | 2022-12-31 (or later - see note)
+| 2.1   | date                  | DateTime                       | 2025-12-31 (or later - see note)
 | 2.2   | dateType              | CI_DateTypeCode (ISO codelist) | publication
-| 3     | edition               | CharacterString                | 1.0.0
-| 4     | editionDate           | DateTime                       | 2022-12-31 (or later - see note)
+| 3     | edition               | CharacterString                | 2.0.0
+| 4     | editionDate           | DateTime                       | 2025-12-31 (or later - see note)
 | 5     | citedResponsibleParty | CI_Responsibility (class)      | --
 | 5.1   | role                  | CI_RoleCode (ISO codelist)     | publisher
 | 5.2   | party                 | CI_Organisation (class)        | --
@@ -44,12 +44,11 @@ h| No. h| ISO class or attribute h| Type h| Value
 | 7.1   | linkage               | CharacterString (URL)          | https://registry.iho.int/
 | 7.2   | name                  | CharacterString                | S-131 Portrayal Catalogue
 | 7.3 | description | CharacterString
-| XML Portrayal Catalogue accompanied by related files for symbols,
-colour profiles, rules, etc
+| XML Portrayal Catalogue accompanied by related files for symbols, colour profiles, rules, etc
 
 |===
 
-NOTE: As of the preparation of this document, development tools and
+NOTE&#58; As of the preparation of this document, development tools and
 viewers for S-100 GML datasets using S-100-conformant portrayal catalogues
 are not available. The portrayal catalogue may therefore need to be
 updated and later builds with later dates may become available as
@@ -81,11 +80,11 @@ ISO 639-2/T." These codes and the corresponding language names for
 display purposes may be obtained from the codelist _S100_MD_LanguageCode_
 in the S-100 codelists file, which is part of the S-100 schemas distribution
 footnote:[Available from https://schemas.s100dev.net. The XML and
-human-readable versions of the codelists file for S-100 Edition 5.0.0
+human-readable versions of the codelists file for S-100 Edition 5.2.0
 are located at
-https://schemas.s100dev.net/schemas/S100/5.0.0/resources/Codelists/cat/codelists.xml
+https://schemas.s100dev.net/schemas/S100/5.2.0/resources/Codelists/cat/codelists.xml
 and
-https://schemas.s100dev.net/schemas/S100/5.0.0/resources/Codelists/cat/codelists.html
+https://schemas.s100dev.net/schemas/S100/5.2.0/resources/Codelists/cat/codelists.html
 respectively.].
 
 [[sec_11.3.2]]
@@ -179,7 +178,7 @@ used for encoding schedule information, but if populated should be
 accessible via the "Notes" column or in header or trailer rows.
 ====
 
-Since S-100 Edition 5.0.0 portrayal does not provide for specifying
+Since S-100 Edition 5.2.0 portrayal does not provide for specifying
 templates for text formatting, the implementation of tabular forms
 must be left to implementers for this edition. As a provisional alternative,
 information may be displayed in text form, with rows of <<table_11.2>>
@@ -229,5 +228,5 @@ feature (for *PermissionType* associations).
 
 Tabular display or mixed tabular/text display of conditions is also
 allowable. The design of tabular forms is left to implementers in
-this edition since S-100 portrayal in Edition 5.0.0 does not provide
+this edition since S-100 portrayal in Edition 5.2.0 does not provide
 for the specification of table templates.

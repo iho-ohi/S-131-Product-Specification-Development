@@ -30,7 +30,7 @@ as required.
 Data Producers should follow their established production processes
 for maintaining and updating datasets. Data must be maintained against
 S-131 Annex A -- _Data Classification and Encoding Guide_, checked
-against S-131 Annex D -- _Validation Checks_, and encapsulated in
+against validation checksin S-158:100 and S-158:131 (generic and product-specifc validation checks respectively), and encapsulated in
 GML conforming to the S-131 GML schema.
 
 [[sec_10.5]]

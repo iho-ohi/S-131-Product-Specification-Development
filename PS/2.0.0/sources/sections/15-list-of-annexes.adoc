@@ -1,20 +1,16 @@
 
 == LIST OF ANNEXES
 
-These Annexes are separate files and can be found either in the S-131
-Product Specification distribution package or at the locations indicated.
+These Annexes are separate files and can be found either in the S-131 Product Specification distribution package or at the locations indicated.
 
-Annex A:: Data Classification and Encoding Guide. Separate document.
-IHO Geospatial Information Registry, https://registry.iho.int
+Annex A:: Data Classification and Encoding Guide. Separate document. IHO Geospatial Information Registry, https://registry.iho.int
 
-Annex B:: Encoding Format. GML schema, Schematron rule files, and
-schema documentation. S-100 schema server, https://schemas.s100dev.net.
+Annex B:: Encoding Format. GML schema, Schematron rule files, and schema documentation. S-100 schema server, https://schemas.s100dev.net.
 
-Annex C:: Feature catalogue. XML file. IHO Geospatial Information
-Registry, https://registry.iho.int
+Annex C:: Feature catalogue. XML file. IHO Geospatial Information Registry, https://registry.iho.int
 
-Annex D:: Validation Checks. Separate document. IHO Geospatial Information
-Registry, https://registry.iho.int
+// Annex D:: Validation Checks. Separate document. IHO Geospatial Information Registry, https://registry.iho.int
 
-Annex E:: Portrayal Catalogue. Zip archive of portrayal catalogue.
-IHO Geospatial Information Registry, https://registry.iho.int
+// Annex E:: Portrayal Catalogue. Zip archive of portrayal catalogue. IHO Geospatial Information Registry, https://registry.iho.int
+
+Annex D:: Portrayal Catalogue. Zip archive of portrayal catalogue. IHO Geospatial Information Registry, https://registry.iho.int

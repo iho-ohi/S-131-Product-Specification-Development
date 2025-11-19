@@ -15,11 +15,11 @@ S100_GF_InformationType respectively.
 
 [[fig_4.1]]
 .Realizations from the S-100 General Feature Model
-image::figure-1.png[]
+image::Fig&#32;4.1&#32;Realizations&#32;of&#32;S-100&#32;GFM.png[]
+
 
 [[sec_4.2]]
 === Application Schema
-
 S-131 conforms to the General Feature Model (GFM) from S-100
 Part 3. This document describes the Application Schema expressed in
 UML. This document contains only an overview of the S-131 application
@@ -52,7 +52,6 @@ right following an '=' sign.
 that cross one another.)
 * Where the association role or name is not explicitly shown, the
 default rules for roles and names apply:
-
 ** The role name is 'the<CLASSNAME>' where <CLASSNAME> is the name
 of the class to which that association end is linked.
 ** The association name is '<CLASSNAME1>_<CLASSNAME2>' where <CLASSNAME1>
@@ -88,7 +87,7 @@ S-101 ENCs.
 
 [[fig_4.2]]
 .Base classes in S-131
-image::figure-2.png[]
+image::S-131&#32;Base&#32;Classes.png[]
 
 [[sec_4.2.1.1]]
 ===== Overview of domain features and information types
@@ -122,7 +121,7 @@ by metadata as defined in the S-131 metadata package.
 
 [[fig_4.3]]
 .Overview of S-131 domain feature classes
-image::figure-3.png[]
+image::S-131&#32;Overview.png[]
 
 Information types model chunks of information associated to feature
 types. Information types may be associated to other information types
@@ -131,7 +130,7 @@ types used in S-131 are depicted in <<fig_4.4>>.
 
 [[fig_4.4]]
 .Information types
-image::figure-4.png[]
+image::S-131&#32;InfoTypesAbbreviated.png[]
 
 The abstract class *FeatureType* is an abstract class from which the
 geographic feature classes in the application schema are derived.
@@ -148,7 +147,7 @@ DCEG. <<fig_4.5>> depicts *FeatureType* and its attributes.
 
 [[fig_4.5]]
 .The root class FeatureType
-image::figure-5.png[]
+image::Fig&#32;4.5&#32;Root&#32;FeatureType.png[]
 
 The abstract class *InformationType* is an abstract class from which
 all the information type classes in the S-131 domain model
@@ -165,7 +164,7 @@ depicts *InformationType* and its attributes.
 
 [[fig_4.6]]
 .The root class InformationType
-image::figure-6.png[]
+image::Fig&#32;4.6&#32;Root&#32;InfoType.png[]
 
 [[sec_4.2.1.2]]
 ===== Layout
@@ -182,7 +181,7 @@ due to GI Registry conceptual limitations on re-use of concepts.
 
 [[fig_4.7]]
 .Layout features
-image::figure-7.png[]
+image::S-131&#32;Layout.png[]
 
 [[sec_4.2.1.3]]
 ===== Physical Infrastructure
@@ -196,7 +195,7 @@ concepts.
 
 [[fig_4.8]]
 .Physical Infrastructure features
-image::figure-8.png[]
+image::S-131&#32;Physical&#32;Infrastructure.png[]
 
 [[sec_4.2.1.4]]
 ===== Services
@@ -210,11 +209,11 @@ in <<fig_4.10>>
 
 [[fig_4.9]]
 .Port Services
-image::figure-9.png[]
+image::S-131&#32;Services.png[]
 
 [[fig_4.10]]
 .Service Enumerations and Codelists
-image::figure-10.png[]
+image::S-131&#32;Services&#32;Enumerations.png[]
 
 [[sec_4.2.1.5]]
 ===== Regulations
@@ -267,7 +266,7 @@ attributes of their generalizations *AbstractRxN* and *InformationType*
 
 [[fig_4.11]]
 .Regulations and other information types for primarily textual information
-image::figure-11.png[]
+image::S-131&#32;RXNTypes.png[]
 
 [[sec_4.2.1.6]]
 ===== Contact information
@@ -277,7 +276,7 @@ below.
 
 [[fig_4.12]]
 .Contact information
-image::figure-12.png[]
+image::S-131&#32;ContactDetails.png[]
 
 Contact information can be associated to an instance of an *Authority*
 information type as well as to any feature that is a subtype of
@@ -287,7 +286,7 @@ shows the associations to *ContactInformation*.
 
 [[fig_4.13]]
 .Associations to contact information
-image::figure-13.png[]
+image::S-131&#32;ContactDetails&#32;Associations.png[]
 
 [[sec_4.2.1.7]]
 ===== Supervising organizations and their service hours
@@ -323,7 +322,7 @@ The model for both kinds of schedules is shown in <<fig_4.13>>.
 
 [[fig_4.14]]
 .Working times and schedules
-image::figure-14.png[]
+image::S-131&#32;WorkingTimes.png[]
 
 The authority should be encoded only if its presence in the dataset
 conveys information that is useful to the end user. In S-131 this
@@ -364,7 +363,7 @@ object (or *NauticalInformation*, etc.).
 
 [[fig_4.15]]
 .Regulations, etc., applying to specific features
-image::figure-15.png[]
+image::S-131&#32;RulesForFeatures.png[]
 
 [[sec_4.2.1.9]]
 ===== Regulations applying only to vessels with specific characteristics or cargoes
@@ -424,7 +423,7 @@ define subsets of vessels according to specified characteristics.
 
 [[fig_4.16]]
 .Vessel subsets characterised by cargo, dimensions and capabilities
-image::figure-16.png[]
+image::S-131&#32;ShipCharacteristicSubsets.png[]
 
 Given the relevant subset of vessels, it can be associated to the
 appropriate feature, regulation, or report by a *PermissionType*,
@@ -452,7 +451,7 @@ limits, etc., and a given feature or service.
 
 [[fig_4.17]]
 .Applicability of rules, etc., to vessel categories
-image::figure-17.png[]
+image::S-131&#32;ApplicabilityAssociations.png[]
 
 *PermissionType* links a feature to an *Applicability*, and models
 a requirement, recommendation or prohibition on entry into a feature,
@@ -502,7 +501,7 @@ the nature of the content allows it. See <<fig_4.17>>.
 
 [[fig_4.18]]
 .Attachment of uncategorizable information to any feature or information type
-image::figure-18.png[]
+image::S-131&#32;SupplementaryInformation.png[]
 
 [[sec_4.2.1.11]]
 ===== "Wrapper" complex attributes
@@ -511,11 +510,11 @@ S-131 provides a general method for encoding some kinds of information
 using "wrapper" attributes that are basically a named type of text
 content. The information is encoded in narrative form in a *textContent*
 sub-attribute, which provides a general way to encode textual information.
-<<fig_4.18>> depicts the wrapper attributes.
+<<fig_4.19>> depicts the wrapper attributes.
 
 [[fig_4.19]]
 .Wrapper Attributes
-image::figure-19.png[]
+image::S-131&#32;Wrapper&#32;Attributes.png[]
 
 [[sec_4.2.1.12]]
 ===== Feature relationships
@@ -552,7 +551,7 @@ association.
 
 [[fig_4.20]]
 .Relationships between geographic features
-image::figure-20.png[]
+image::S-131&#32;Feature&#32;Associations.png[]
 
 [[sec_4.2.2]]
 ==== Meta Features
@@ -571,7 +570,7 @@ the datums for depths and elevations respectively.
 
 [[fig_4.21]]
 .Meta-feature classes
-image::figure-21.png[]
+image::S-131&#32;Meta&#32;Features.png[]
 
 [[sec_4.2.3]]
 ==== Spatial Quality Information Type
@@ -583,7 +582,7 @@ horizontal quality. See <<fig_4.22>>.
 
 [[fig_4.22]]
 .Spatial Quality
-image::figure-22.png[]
+image::S-131&#32;Spatial&#32;Quality.png[]
 
 [[sec_4.2.4]]
 ==== Cartographic Features
@@ -597,4 +596,4 @@ See <<fig_4.23>>.
 
 [[fig_4.23]]
 .Text Placement
-image::figure-23.png[]
+image::S-131&#32;Cartographic&#32;Features.png[]

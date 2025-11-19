@@ -45,84 +45,78 @@ Catalogue, Portrayal Catalogue, and metadata.
 [bibliography]
 ==== Normative
 
-* [[[ISO_639_2_T,ISO 639-2]]] _Codes for the representation of names of languages -- Part 2: Alpha-3 code_
+* [[[ISO_639_2_T,ISO 639-2]]] Codes for the representation of names of languages -- Part 2: Alpha-3 code
 
-* [[[ISO_3166_1,ISO 3166-1]]] _Codes for the Representation of Names of Countries and their Subdivisions -- Part 1:_ _Country Codes_
+* [[[ISO_3166_1,ISO 3166-1]]] Codes for the Representation of Names of Countries and their Subdivisions -- Part 1: Country Codes
 
-* [[[IHO_M_3,IHO M-3]]] Resolutions of the International Hydrographic Organization, IHO Publication M-3, 2nd Edition, 2010 (updated April 2022).
+* [[[IHO_M_3,IHO M-3 2025]]] M-3: Resolutions of the International Hydrographic Organization, IHO Publication M-3, 2nd Edition, 2010 (updated July 2025). (https://iho.int/uploads/user/pubs/misc/M3-E-2025.pdf)
 
-* [[[IHO_S_62,IHO S-62]]] List of Data Producer Codes (online), URL: http://registry.iho.int/producercode/list.do
+* [[[IHO_S_62,nofetch(IHO S-62)]]] S-62: List of Data Producer Codes (online), URL: https://registry.iho.int/producercode/list.do
 
-* [[[IHO_S_97,IHO S-97]]] IHO Guidelines for Creating S-100 Product Specifications, Edition 1.1.0, June 2020.
+* [[[IHO_S_97,nofetch(IHO S-97)]]] S-97: IHO Guidelines for Creating S-100 Product Specifications, Edition 2.0.0 (in preparation).
 
-* [[[IHO_S_98,IHO S-98]]] Data Product Interoperability in S-100 Navigation Systems, Edition 1.0.0, May 2022
+* [[[IHO_S_98,nofetch(IHO S-98)]]] S-98: Data Product Interoperability in S-100 Navigation Systems, Edition 2.0.0 (in preparation).
 
-* [[[IHO_S_100,IHO S-100]]] IHO Universal Hydrographic Data Model, Edition 5.0.0, December 2022.
+* [[[IHO_S_100,IHO S-100 5.2.0]]] IHO Universal Hydrographic Data Model, Edition 5.2.0. International Hydrographic Organization, June 2024.
+
+* [[[IHO_S_158,IHO S-158]]] S-158: Validation Checks - Introduction and Structure, Edition 1.0.0, International Hydrographic Organization, February 2025.
+
+* [[[IHO_S158_100,IHO S-158:100]]] S-158:100: Universal Hydrographic Data Model Validation Checks, Edition 1.0.0, International Hydrographic Organization, February 2025.
+
+* [[[IHO_S_158_131,nofetch(IHO S-158:131)]]] S-158:131: Marine Harbour Infrastructure Validation Checks, Edition 1.0.0, International Hydrographic Organization. (In preparation.)
 
 [[sec_1.3.2]]
 [bibliography]
 ==== Informative
 
-* [[[NIST_FIPS_186,NIST FIPS 186]]] _Federal Information Processing Standards -- Digital Signature Standard_
+EDITOR: FIPS 186 has undergone multiple updates, the latest is 186-5 - any reason to keep citing FIPS 186?
 
-* [[[IALA_G1143,IALA G1143]]] _Unique Identifiers for Maritime Resources_, Edition 3.0. International Association of Marine Aids to Navigation and Lighthouse Authorities, June 2021.
+* [[[NIST_FIPS_186,nofetch(NIST FIPS 186)]]] FIPS 186-5: Federal Information Processing Standards -- Digital Signature Standard, National Institute of Standards and Technology (NIST) (https://csrc.nist.gov/pubs/fips/186-5/final).
 
-* [[[ISO_8601_2004,ISO 8601:2004]]] _Data Elements and Interchange Formats -- Information Interchange -- Representation of Dates and Times_
+* [[[IALA_G1143,nofetch((G1143)IALA G1143)]]] IALA G1143: Unique Identifiers for Maritime Resources.
+International Association of Marine Aids to Navigation and Lighthouse Authorities, Edition 3.1, June 2021 (https://www.iala.int/product/g1143/).
 
-* [[[ISO_19101_2003,ISO 19101:2003]]] _Geographic Information -- Reference Model_
+* [[[ISO_8601_2004,ISO 8601:2004]]] Data Elements and Interchange Formats -- Information Interchange -- Representation of Dates and Times
 
-* [[[ISO_19103_2005,ISO 19103:2005]]] _Geographic Information -- Conceptual Schema Language_
+* [[[ISO_19101_2003,ISO 19101:2002]]] Geographic Information -- Reference Model
 
-* [[[ISO_19103_2_2005,ISO 19103-2:2005]]] _Geographic Information -- Conceptual Schema Language -- Part 2_
+* [[[ISO_19103_2005,ISO/TS 19103:2005]]] Geographic Information -- Conceptual Schema Language
 
-* [[[ISO_19108_2002,ISO 19108:2002]]] _Geographic Information -- Temporal Schema_
+* [[[ISO_19108_2002,ISO 19108:2002]]] Geographic Information -- Temporal Schema
 
-* [[[ISO_19109_2005,ISO 19109:2005]]] _Geographic Information -- Rules for Application Schema_
+* [[[ISO_19109_2005,ISO 19109:2005]]] Geographic Information -- Rules for Application Schema
 
-* [[[ISO_19110_2005,ISO 19110:2005]]] _Geographic Information -- Methodology for Feature Cataloguing_
+* [[[ISO_19110_2005,ISO 19110:2005]]] Geographic Information -- Methodology for Feature Cataloguing
 
-* [[[ISO_19111_2007,ISO 19111:2007]]] _Geographic Information -- Spatial Referencing by Coordinates_
+* [[[ISO_19111_2007,ISO 19111:2007]]] Geographic Information -- Spatial Referencing by Coordinates
 
-* [[[ISO_19115_1,ISO 19115-1]]] _Geographic information -- Metadata -- Part 1 - Fundamentals_. As amended by Amendment 01 (2018)
+* [[[ISO_19115_1,ISO 19115-1]]] Geographic information -- Metadata -- Part 1 - Fundamentals. As amended by Amendment 01 (2018)
 
-* [[[ISO_TS_19115_3,ISO/TS 19115-3]]] _Geographic information - Metadata - XML schema implementation for fundamental concepts_
+* [[[ISO_TS_19115_3,ISO/TS 19115-3]]] Geographic information - Metadata - XML schema implementation for fundamental concepts
 
-* [[[ISO_19117_2012,ISO 19117:2012]]] _Geographic Information -- Portrayal_
+* [[[ISO_19117_2012,ISO 19117:2012]]] Geographic Information -- Portrayal
 
-* [[[ISO_19131_2008,ISO 19131:2008]]] _Geographic Information -- Data Product Specifications_
+* [[[ISO_19131_2008,ISO 19131:2007]]] Geographic Information -- Data Product Specifications
 
-* [[[ISO_19157_2013,ISO 19157:2013]]] _Geographic Information -- Data Quality_
+* [[[ISO_19157_2013,ISO 19157:2013]]] Geographic Information -- Data Quality
 
-* [[[ISO_IEC_19501_2005,ISO/IEC 19501:2005]]] _Information Technology -- Unified Modelling Language (UML)_, Version 1.4.2
+* [[[ISO_IEC_19501_2005,ISO/IEC 19501:2005]]] Information Technology -- Unified Modelling Language (UML), Version 1.4.2
 
 * [[[ISO_IEC_19757_3,ISO/IEC 19757-3]]] Information technology -- Document Schema Definition Languages (DSDL) -- Part 3: Rule-based validation -- Schematron.
 
-* [[[IHO_S_44,IHO S-44]]] IHO Standards for Hydrographic Surveys, Edition 6.0.0, September 2020.
+* [[[IHO_S_44,IHO S-44]]] S-44: IHO Standards for Hydrographic Surveys, Edition 6.0.0, September 2020.
 
-* [[[IHO_S_58,IHO S-58]]] ENC Validation Checks, Edition 7.0.0, October 2022.
+* [[[IHO_S_101,IHO S-101]]] S-101: Electronic Navigational Chart Product Specification Edition 2.0.0, December 2024.
 
-* [[[IHO_S_101,IHO S-101]]] IHO Electronic Navigational Chart Product Specification Edition 1.1.0 (under development).
+* [[[ITPCO,nofetch((PIM)ITPCO)]]] ITPCO: Port Information Manual, Edition 3.02, Industry Partners, Standards Partners and Endorsers of the ITPCO, IHMA, 
+IAPH and UKHO. International Taskforce Port Call Optimization (ITPCO), January 2021 (https://portcalloptimization.org/images/Port%20Information%20Manual%203.02.pdf).
 
-* [[[ITPCO,ITPCO]]] Port Information Manual for Nautical Data of BIMCO, IAPH, IHMA, IHO, ITPCO
-
-* [[[ISO_10646_1,hidden(ISO 10646-1)]]]
+* [[[ISO_10646_1,ISO/IEC 10646-1:2000]]] 
 
 [[sec_1.4]]
 === Terms, definitions and abbreviations
 
 [[sec_1.4.1]]
-==== Use of language
-
-Within this document:
-
-* "Must" indicates a mandatory requirement.
-
-* "Should" indicates an optional requirement, that is the recommended
-process to be followed, but is not mandatory.
-
-* "May" means "allowed to" or "could possibly", and is not mandatory.
-
-[[sec_1.4.2]]
 [heading="terms and definitions"]
 ==== Terms and definitions
 
@@ -131,16 +125,16 @@ process to be followed, but is not mandatory.
 Closeness of agreement between a test result and the accepted reference
 values.
 
-NOTE: A test result can be from an observation or measurement.
+NOTE&#58; A test result can be from an observation or measurement.
 
 ===== aggregation
 
-Special form of {{association}} that specifies a whole-part relationship
+Special form of *association* that specifies a whole-part relationship
 between the aggregate (whole) and a component part.
 
 ===== alarm
 
-(MSC.302/A) a high-priority {{alert}}. Condition requiring immediate
+(MSC.302/A) a high-priority *alert*. Condition requiring immediate
 attention and action by the bridge team, to maintain the safe navigation
 of the ship.
 
@@ -148,7 +142,7 @@ of the ship.
 
 (MSC.302/A) announcement of abnormal situations and conditions requiring
 attention. Alerts are divided in four priorities: **emergency alarm**s,
-{{alarm,alarms}}, {{warning,warnings}} and {{caution,cautions}}.
+**alarm**s, **warning**s and **caution**s.
 An alert provides information about a defined state change in connection
 with information about how to announce this event in a defined way
 to the system and the operator.
@@ -166,39 +160,39 @@ connections among their instances.
 
 (1) Named property of an entity.
 
-NOTE: Describes a geometrical, topological, thematic, or other characteristic
+NOTE&#58; Describes a geometrical, topological, thematic, or other characteristic
 of an entity.
 
 (2) Feature within a classifier that describes a range of values that
 instances of the classifier may hold.
 
-NOTE: An attribute is semantically equivalent to a composition association;
+NOTE&#58; An attribute is semantically equivalent to a composition association;
 however, the intent and usage is normally different.
 
-NOTE: "Feature" used in this definition is the UML meaning of the
+NOTE&#58; "Feature" used in this definition is the UML meaning of the
 term.
 
 ===== boundary
 
 Set that represents the limit of an entity.
 
-NOTE: Boundary is most commonly used in the context of geometry, where
+NOTE&#58; Boundary is most commonly used in the context of geometry, where
 the set is a collection of points or a collection of objects that
 represent those points.
 
 ===== caution
 
-(MSC.302/A) lowest priority of an {{alert}}. Awareness of a condition
-which does not warrant an {{alarm}} or warning condition, but still
+(MSC.302/A) lowest priority of an *alert*. Awareness of a condition
+which does not warrant an *alarm* or warning condition, but still
 requires attention out of the ordinary consideration of the situation
 or of given information.
 
 ===== class
 
-Description of a set of objects that share the same {{attribute,attributes}},
-operations, methods, {{relationship,relationships}}, and semantics.
+Description of a set of objects that share the same *attribute*s,
+operations, methods, *relationship*s, and semantics.
 
-NOTE: A class represents a concept within the system being modelled.
+NOTE&#58; A class represents a concept within the system being modelled.
 Depending on the kind of model, the concept may be real-world (for
 an analysis model), or it may also contain algorithmic and computer
 implementation concepts (for a design model). A classifier is a generalization
@@ -207,35 +201,35 @@ actor and component.
 
 ===== classification
 
-The process of determining the appropriate {{data type}} within a
-{{feature catalogue}} for a particular real world feature, including
-consideration of {{data quality}}.
+The process of determining the appropriate *data type* within a
+*feature catalogue* for a particular real world feature, including
+consideration of *data quality*.
 
 ===== coordinate
 
-One of a sequence of n numbers designating the position of a {{point}}
+One of a sequence of n numbers designating the position of a *point*
 in n-dimensional space.
 
-NOTE: In a {{coordinate reference system}}, the coordinate numbers
+NOTE&#58; In a *coordinate reference system*, the coordinate numbers
 are qualified by units.
 
 ===== coordinate reference system
 
-{{coordinate,Coordinate}} system that is related to an object by a
+*Coordinate* system that is related to an object by a
 datum.
 
-NOTE: For geodetic and vertical datums, the object will be the Earth.
+NOTE&#58; For geodetic and vertical datums, the object will be the Earth.
 
 ===== coordinate tuple
 
-Ordered list of {{coordinate,coordinates}}.
+Ordered list of **coordinate**s.
 
 ===== curve
 
-1-dimensional {{geometric primitive}}, representing the continuous
+1-dimensional *geometric primitive*, representing the continuous
 image of a line.
 
-NOTE: The boundary of a curve is the set of points at either end of
+NOTE&#58; The boundary of a curve is the set of points at either end of
 the curve. If the curve is a cycle, the two ends are identical, and
 the curve (if topologically closed) is considered to not have a boundary.
 The first point is called the start point, and the last is the end
@@ -246,14 +240,14 @@ that a continuous image of a connected set is connected.
 ===== curve segment
 
 1-dimensional geometric object used to represent a continuous component
-of a {{curve}} using homogeneous interpolation and definition methods.
+of a *curve* using homogeneous interpolation and definition methods.
 
-NOTE: The geometric set represented by a single curve segment is equivalent
+NOTE&#58; The geometric set represented by a single curve segment is equivalent
 to a curve.
 
 ===== data product
 
-A {{dataset}} or dataset series that conforms to a data product specification.
+A *dataset* or dataset series that conforms to a data product specification.
 
 ===== data quality
 
@@ -265,10 +259,10 @@ of quality, an evaluation procedure, a quality result, and a scope.
 Specification of a value domain with operations allowed on values
 in this domain.
 
-NOTE: Data types include primitive predefined types and user-definable
+NOTE&#58; Data types include primitive predefined types and user-definable
 types.
 
-NOTE: A data type is identified by a term, for example Integer.
+NOTE&#58; A data type is identified by a term, for example Integer.
 
 [example]
 Integer, Real, Boolean, String, DirectPosition and Date
@@ -277,7 +271,7 @@ Integer, Real, Boolean, String, DirectPosition and Date
 
 An identifiable collection of data.
 
-NOTE: A dataset may be a smaller grouping of data which, though limited
+NOTE&#58; A dataset may be a smaller grouping of data which, though limited
 by some constraint such as spatial extent or feature type,is located
 physically within a larger dataset. Theoretically, a dataset may be
 as small as a single feature contained within a larger dataset.
@@ -286,44 +280,26 @@ A hardcopy map or chart may be considered a dataset.
 ===== datum
 
 Parameter or set of parameters that define the position of the origin,
-the scale, and the orientation of a {{coordinate}} system.
+the scale, and the orientation of a *coordinate* system.
 
 ===== display priority
 
-Hierarchy to determine which {{feature}} is to be displayed when two
+Hierarchy to determine which *feature* is to be displayed when two
 features overlap. Priority 2 overwrites 1.
 
-===== ecdis
-
-A navigation information system which with adequate back-up arrangements
-can be accepted as complying with the up-to-date chart required by
-regulations V/19 and V/27 of the 1974 SOLAS Convention, as amended,
-by displaying selected information from a System Electronic Navigational
-Chart (SENC) with positional information from navigation sensors to
-assist the Mariner in route planning and route monitoring, and if
-required display additional navigation-related information.
-
-===== enc
-
-The {{dataset}}, standardized as to content, structure and format,
-issued for use with {{ECDIS}} by or on the authority of a Government
-authorized Hydrographic Office or other relevant government institution,
-and conforming to IHO standards. The ENC contains all the chart information
-necessary for safe navigation and may contain supplementary information
-in addition to that contained in the paper chart which may be considered
-necessary for safe navigation.
+EDITOR: Removed "ecdis" and "enc" from Terms, they are defined as Abbreviations, and the definition of ECDIS references the obsolete "SENC"
 
 ===== enumeration
 
 A fixed list of valid identifiers of named literal values.
-{{attribute,Attributes}} of an enumerated type may only take values
+**Attribute**s of an enumerated type may only take values
 from this list.
 
 ===== feature
 
 Abstraction of real world phenomena.
 
-NOTE: A feature may occur as a type or an instance. Feature type or
+NOTE&#58; A feature may occur as a type or an instance. Feature type or
 feature instance should be used when only one is meant.
 
 [example]
@@ -332,24 +308,24 @@ with other phenomena into a feature type 'landmark'
 
 ===== feature association
 
-{{relationship,Relationship}} that links instances of one {{feature}}
-type with instances of the same or a different {{feature}} type.
+*Relationship* that links instances of one *feature*
+type with instances of the same or a different *feature* type.
 
 ===== feature attribute
 
-Characteristic of a {{feature}}.
+Characteristic of a *feature*.
 
-NOTE: A feature {{attribute}} may occur as a type or an instance.
+NOTE&#58; A feature *attribute* may occur as a type or an instance.
 Feature attribute type or feature attribute instance is used when
 only one is meant.
 
-NOTE: A feature {{attribute}} type has a name, a {{data type}} and
-a domain associated to it. A feature {{attribute}} instance has an
-attribute value taken from the value domain of the feature {{attribute}}
+NOTE&#58; A feature *attribute* type has a name, a *data type* and
+a domain associated to it. A feature *attribute* instance has an
+attribute value taken from the value domain of the feature *attribute*
 type.
 
-NOTE: In a {{feature catalogue}}, a feature {{attribute}} may include
-a value domain but does not specify {{attribute}} values for feature
+NOTE&#58; In a *feature catalogue*, a feature *attribute* may include
+a value domain but does not specify *attribute* values for feature
 instances.
 
 [example]
@@ -362,15 +338,15 @@ which belongs to the data type _real_
 
 ===== feature catalogue
 
-A catalogue containing definitions and descriptions of the {{feature}}
-types, {{feature attribute,feature attributes}}, and {{feature association,feature associations}} occurring in one or more sets of geographic data.
+A catalogue containing definitions and descriptions of the *feature*
+types, **feature attribute**s, and **feature association**s occurring in one or more sets of geographic data.
 
 ===== geometric primitive
 
 Geometric object representing a single, connected, homogeneous element
 of geometry.
 
-NOTE: Geometric primitives are non-decomposed objects that present
+NOTE&#58; Geometric primitives are non-decomposed objects that present
 information about geometric configuration. They include points, curves,
 surfaces, and solids.
 
@@ -393,7 +369,7 @@ or equipment.
 Entity to which a set of operations can be applied and which has a
 state that stores the effects of the operations.
 
-NOTE: See {{feature}}.
+NOTE&#58; See *feature*.
 
 ===== loxodrome
 
@@ -426,7 +402,7 @@ dataset.
 
 Abstraction of some aspects of universe of discourse.
 
-NOTE: A semantically complete abstraction of a system.
+NOTE&#58; A semantically complete abstraction of a system.
 
 ===== multiplicity
 
@@ -445,22 +421,22 @@ data.
 
 ===== point
 
-0-dimensional {{geometric primitive}}, representing a position.
+0-dimensional *geometric primitive*, representing a position.
 
-NOTE: The {{boundary}} of a point is the empty set.
+NOTE&#58; The *boundary* of a point is the empty set.
 
 ===== portrayal catalogue
 
-Collection of defined portrayals for a {{feature catalogue}}.
+Collection of defined portrayals for a *feature catalogue*.
 
-NOTE: Content of a portrayal catalogue includes portrayal functions,
+NOTE&#58; Content of a portrayal catalogue includes portrayal functions,
 symbols, and portrayal context.
 
 ===== relationship
 
 Semantic connection among model elements.
 
-NOTE: Kinds of relationships include association, generalization,
+NOTE&#58; Kinds of relationships include association, generalization,
 metarelationship, flow, and several kinds grouped under dependency.
 
 ===== scale minimum
@@ -471,10 +447,10 @@ at a scale of 1:90,000).
 
 ===== surface
 
-Connected 2-dimensional {{geometric primitive}}, representing the
+Connected 2-dimensional *geometric primitive*, representing the
 continuous image of a region of a plane.
 
-NOTE: The boundary of a surface is the set of oriented, closed {{curve,curves}}
+NOTE&#58; The boundary of a surface is the set of oriented, closed **curve**s
 that delineate the limits of the surface.
 
 ===== symbol size
@@ -485,8 +461,8 @@ a standard minimum screen.
 
 ===== text label
 
-A textual description of a {{feature}}. Can be formatted to include
-standard text as well as {{feature attribute}} values. For example,
+A textual description of a *feature*. Can be formatted to include
+standard text as well as *feature attribute* values. For example,
 light descriptions, place names etc.
 
 ===== transparent fill
@@ -503,13 +479,13 @@ to the Earth.
 
 ===== warning
 
-(MSC.302/A) {{alert}} for condition requiring immediate attention,
+(MSC.302/A) *alert* for condition requiring immediate attention,
 but no immediate action by the bridge team. Warnings are presented
 for precautionary reasons to make the bridge team aware of changed
 conditions which are not immediately hazardous, but may become so
 if no action is taken.
 
-[[sec_1.4.3]]
+[[sec_1.4.2]]
 ==== Abbreviations
 
 This product specification adopts the following convention for symbols
@@ -547,11 +523,7 @@ MHI:: Marine Harbour Infrastructure
 
 NIPWG:: Nautical Information Provision Working Group
 
-PNG:: Portable Network Graphics
-
 SD:: System Database
-
-SENC:: System Electronic Navigational Chart
 
 SOLAS:: Safety of Life at Sea
 
@@ -578,9 +550,22 @@ XSD:: XML Schema Definition
 XSLT:: eXtensible Stylesheet Language Transformations
 
 [[sec_1.5]]
+=== Use of language
+
+Within this document:
+
+* "Must" indicates a mandatory requirement.
+
+* "Should" indicates an optional requirement, that is the recommended
+process to be followed, but is not mandatory.
+
+* "May" means "allowed to" or "could possibly", and is not mandatory.
+
+
+[[sec_1.6]]
 === General data product description
 
-NOTE: This information contains general information about the data
+NOTE&#58; This information contains general information about the data
 product.
 
 *Title:*:: Marine Harbour Infrastructure
@@ -598,35 +583,32 @@ there will be relevant metadata data quality, production authority,
 data sources, and publication date.
 
 *Spatial Extent:*::
-
-*Description:*:: Global coverage of port and harbours and their environs.
-
-*East Bounding Longitude:*:: 180°
-
-*West Bounding Longitude:*:: -180°
-
-*North Bounding Latitude:*:: 90°
-
++
+--
+*Description:*:: Global coverage of ports and harbours and their environs. +
+*East Bounding Longitude:*:: 180° +
+*West Bounding Longitude:*:: -180° +
+*North Bounding Latitude:*:: 90° +
 *South Bounding Latitude:*:: -90°
+--
 
 *Purpose:*:: The purpose of an MHI dataset is to provide information
 to mariners for use in berth-to-berth navigation and voyage planning.
 
-[[sec_1.6]]
+[[sec_1.7]]
 === Data Product Specification metadata
 
-NOTE: The information in this clause identifies this Product Specification
+NOTE&#58; The information in this clause identifies this Product Specification
 and provides information about its creation and maintenance. Dataset
 metadata is described in a separate clause.
 
-*Title:*:: The International Hydrographic Organization Electronic
-Navigational Chart Product Specification
+*Title:*:: Marine Harbour Infrastructure Product Specification
 
-*S-100 Version:*:: 5.0.0
+*S-100 Version:*:: 5.2.0
 
-*S-131 Version:*:: 1.0.0
+*S-131 Version:*:: 2.0.0
 
-*Date:*:: December 2022
+*Date:*:: December 2025
 
 *Language:*:: English
 
@@ -644,7 +626,7 @@ Fax: + 377 93 10 81 40 +
 Email: mailto:info@iho.int[info@iho.int]
 --
 
-*URL:*:: http://www.iho.int/[www.iho.int]
+*URL:*:: https://iho.int/[iho.int]
 
 *Identifier:*:: S-131
 
@@ -654,16 +636,16 @@ established by the International Hydrographic Organization, and are
 made available via the IHO web site. Maintenance of the Product Specification
 must conform to IHO Resolution 2/2007, as amended.
 
-[[sec_1.7]]
+[[sec_1.8]]
 === IHO Product Specification maintenance
 
-[[sec_1.7.1]]
+[[sec_1.8.1]]
 ==== Introduction
 
 Changes to S-131 will be released by the IHO as a New Edition, revision,
 or clarification.
 
-[[sec_1.7.2]]
+[[sec_1.8.2]]
 ==== New Edition
 
 _New Editions_ of S-131 introduce significant changes. _New Editions_
@@ -673,7 +655,7 @@ _New Editions_ are likely to have a significant impact on either existing
 users or future users of S-131. All cumulative _revisions_ and _clarifications_
 must be included with the release of approved New Editions.
 
-[[sec_1.7.3]]
+[[sec_1.8.3]]
 ==== Revision
 
 _Revisions_ are defined as substantive semantic changes to S-131.
@@ -694,7 +676,7 @@ later version of the Feature and Portrayal Catalogues.
 In most cases a new Feature Catalogue will result in a _revision_
 of S-131.
 
-[[sec_1.7.4]]
+[[sec_1.8.4]]
 ==== Clarification
 
 _Clarifications_ are defined as non-substantive changes. Typically,
@@ -706,7 +688,7 @@ a data product.
 Changes in a _clarification_ are minor and ensure backward compatibility
 with the previous versions.
 
-[[sec_1.7.5]]
+[[sec_1.8.5]]
 ==== Version numbers
 
 The associated version control numbering to identify changes (n) to

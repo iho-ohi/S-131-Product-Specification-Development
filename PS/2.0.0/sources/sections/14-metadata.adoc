@@ -29,17 +29,6 @@ metadata are included in <<sec_14.2>>, generally as remarks describing
 the extra conditions and restrictions imposed by S-131 (such as making
 an optional attribute mandatory).
 
-The S-131 product specification package includes an implementation
-of the S-131 constraints on metadata attributes) as Schematron rules
-in files available from the IHO schema server. The generic S-100 schemas
-distribution includes a similar implementation of "sanity checks"
-and S-100 constraints However, neither S-100 not S-131 mandate use
-of Schematron processors or the distributed Schematron rule files
-in implementations. Implementers may substitute any implementation
-method to apply or check constraints instead of using a Schematron-capable
-processor, including re-encoding the constraints in any suitable
-implementation-specific language.
-
 This clause defines the mandatory and optional metadata needed for
 S-131. In some cases (if provided by the producer or exchange set
 packager) the metadata may be repeated in a language other than English.
@@ -58,12 +47,12 @@ in <<sec_13.1>>.
 component discovery metadata blocks.
 
 [[fig_14.1]]
-.Relationship between exchange catalogue, discovery metadata, and dataset (from S-100 5.0.0 Figure 17-6).
+.Relationship between exchange catalogue, discovery metadata, and dataset (from S-100 5.2.0 Figure 17-6).
 image::figure-27.png[]
 
 The detailed structure of the S-131 exchange catalogue is depicted
 in <<fig_14.2>>. This figure is derived from Figure 17-7 in S-100
-Edition 5.0.0, with the following restriction:
+Edition 5.2.0, with the following restriction:
 
 * Elements that are optional in the generic S-100 catalogue model
 but not used in S-131 are not shown; for example, the ISO 8211 and
@@ -71,7 +60,7 @@ HDF5 formats in *S100_EncodingFormat*.
 
 [[fig_14.2]]
 .Details of exchange set catalogue classes. (Derived from S-100 Figure 17-7.)
-image::figure-28.png[]
+image::Fig&#32;14.2&#32;Exchange&#32;catalogue&#32;classes.png[]
 
 The following clauses define the mandatory and optional metadata needed
 for S-131. In some cases the metadata may be repeated in a national
@@ -176,11 +165,13 @@ and _boundingBox_ are mandatory in S-131.*
 _false_ indicates an uncompressed dataset resource
 | Attribute | dataProtection | Indicates if the data is encrypted | 1 | Boolean | _true_ indicates an encrypted dataset resource +
 _false_ indicates an unencrypted dataset resources
-| Attribute | protectionScheme | Specification of method used for data protection | 0..1 | S100_ProtectionScheme | In S-100 Edition 5.0.0 the only allowed value is "S100p15".
+| Attribute | protectionScheme | Specification of method used for data protection | 0..1 | S100_ProtectionScheme | In S-100 Edition 5.2.0 the only allowed value is "S100p15".
 
 | Attribute | digitalSignatureReference | Specifies the algorithm used to compute digitalSignatureValue | 1 | S100_DigitalSignatureReference (see S-100 Part 15) |
 
-| Attribute | digitalSignatureValue | Value derived from the digital signature | 1..++*++ | S100_DigitalSignatureValue (see S-100 Part 15) | The value resulting from application of __digitalSignatureReference__Implemented as the digital signature format specified in Part 15
+| Attribute | digitalSignatureValue | Value derived from the digital signature | 1..++*++ | S100_DigitalSignatureValue (see S-100 Part 15) | The value resulting from application of __digitalSignatureReference__. Implemented as the digital signature format specified in Part 15.
+There must be at least one signature on the file as included in the exchange set.
+
 | Attribute | copyright | Indicates if the dataset is copyrighted | 1 | Boolean | _true_ indicates the resource is copyrighted +
 _false_ Indicates the resource is not copyrighted
 | Attribute | classification | Indicates the security classification of the dataset | 0..1 | MD_SecurityConstraints> MD_ClassificationCode (codelist)
@@ -268,7 +259,7 @@ h| Name h| Description h| Multiplicity h| Type h| Remarks
 | *The optional S-100 attributes _temporalExtent_ and _approximateGridResolution_ are not used in S-131.*
 | boundingPolygon | A polygon which defines the actual data limit | 1 | EX_BoundingPolygon |
 | optimumDisplayScale | The scale with which the data is optimally displayed | 0..1 | Integer
-| Example: A scale of 1:25000 is encoded as 25000
+| Example&#58; A scale of 1:25000 is encoded as 25000
 | maximumDisplayScale | The maximum scale with which the data is displayed | 0..1 | Integer
 | Must be one of the following values:
 
@@ -385,7 +376,7 @@ systems (GNSS) such as the Global Positioning System (GPS)
 
 |===
 
-NOTE: The numeric codes are the codes specified in the IHO GI Registry
+NOTE&#58; The numeric codes are the codes specified in the IHO GI Registry
 for the equivalent listed values of the IHO Hydro domain attribute
 _Vertical Datum_.
 
@@ -427,7 +418,7 @@ a| Needed for S-98 interoperability.
 |===
 
 [[sec_14.2.2.7]]
-===== S100_CompiancyCategory
+===== S100_CompliancyCategory
 
 [cols="a,a,a,a,a",options="unnumbered"]
 |===
@@ -471,11 +462,11 @@ h| Role Name h| Name h| Description h| Mult. h| Type h| Remarks
 _false_ indicates an uncompressed resource
 | Attribute | digitalSignatureReference | Specifies the algorithm used to compute digitalSignatureValue | 1 | S100_DigitalSignatureReference(see Part 15) |
 
-| Attribute | digitalSignatureValue | Value derived from the digital signature | 1..++*++ | S100_DigitalSignatureValue(see Part 15) | The value resulting from application of digitalSignatureReferenceImplemented as the digital signature format specified in S-100 Part 15
-| Attribute | defaultLocale | Default language and character set used in the support file | 0..1 | PT_Locale | In absence of defaultLocale the language is English in UTF-8A support file is expected to use only one as locale. Additional support files can be created for other locales.
-| Attribute | supportedResource | Identifier of the resource supported by this support file | 0..++*++ | CharacterString | Conventions for identifiers are still to be developed in S-100.
+| Attribute | digitalSignatureValue | Value derived from the digital signature | 1..++*++ | S100_DigitalSignatureValue(see Part 15) | The value resulting from application of digitalSignatureReference. Implemented as the digital signature format specified in S-100 Part 15.
+There must be at least one signature on the file as included in the exchange set.
 
-In the interim, S-131 will use the name of the feature catalogue file or the name of the dataset, as appropriate.
+| Attribute | defaultLocale | Default language and character set used in the support file | 0..1 | PT_Locale | In absence of defaultLocale the language is English in UTF-8A support file is expected to use only one as locale. Additional support files can be created for other locales.
+| Attribute | supportedResource | Identifier of the resource supported by this support file | 0..++*++ | CharacterString | Conventions for identifiers are  detailed in S-100 Part 15. S-100 allows file URI, digital signature or cryptographic hash checksums to be used.
 | Attribute | resourcePurpose | The purpose of the supporting resource | 0..1 | S100_ResourcePurpose | Identifies how the supporting resource is used
 
 |===
@@ -490,9 +481,8 @@ h| Role Name h| Name h| Description h| Code h| Remarks
 | Enumeration | S100_SupportFileFormat | The format used for the support file | -
 | *Values listed in S-100 Part 17 but not mentioned in this table
 are not allowed*
-| Value | ASCII | UTF-8 text excluding control codes | 1 | Text
+| Value | TXT_UTF-8 | UTF-8 text excluding control codes | 1 | Text
 | Value | HTML | Hypertext Markup Language | 3 |
-| Value | XML | Extensible Markup Language | 4 |
 | Value | TIFF | Tagged Image File Format | 7 |
 
 |===
@@ -534,21 +524,10 @@ h| Role Name h| Name h| Description h| Mult h| Type h| Remarks
 |===
 h| Role Name h| Name h| Description h| Code h| Remarks
 
-| Enumeration | S100_ResourcePurpose      | Defines the purpose of the supporting resource  | - | -
-| Value       | dataset                   | A dataset                                       | 1 |
-| Value       | featureCatalogue          | A Feature Catalogue for an S-100 data product   | 2 |
-| Value       | portrayalCatalogue        | A Portrayal Catalogue for an S-100 data product | 3 |
-| Value       | interoperabilityCatalogue | An Interoperability Catalogue                   | 4 |
-| Value       | supportFile               | A support file                                  | 5 |
-| Value       | productVersion    | All datasets conforming to a specific version of an S-100 Product Specification | 6 |
-| Value       | productFamily     | All datasets conforming to any active version of an S-100 Product Specification | 7 |
-| Value       | software          | Application software                                                              | 8 |
-| Value       | system            | Provides support or common information for a variety of applications and products | 9 |
-| Value       | exchangeCatalogue | An Exchange Catalogue                      | 10  |
-| Value       | ISO Metadata      | Dataset metadata in ISO format             | 11  |
-| Value       | Language Pack     | A Language pack                            | 12  |
-| Value       | GML Schema        | GML Application Schema                     | 13  |
-| Value       | other             | A type of resource not otherwise described | 100 |
+| Enumeration | S100_ResourcePurpose    | Defines the purpose of the supporting resource  | - | The values ISOMetadata and GMLSchema are not permitted
+| Value       | supportFile             | A support file                                  | 1 |
+| Value       | languagePack            | A Language pack                                 | 3  |
+| Value       | other                   | A type of resource not otherwise described      | 100  |
 
 |===
 
@@ -576,7 +555,9 @@ _5_ cancellationDefault is new edition
 | Attribute | productSpecification | The Product Specification used to create this file | 1 | S100_ProductSpecification |
 | Attribute | digitalSignatureReference | Specifies the algorithm used to compute digitalSignatureValue | 1 | S100_DigitalSignatureReference(see S-100 Part 15) |
 
-| Attribute | digitalSignatureValue | Value derived from the digital signature | 1..++*++ | S100_DigitalSignatureValue(see S-100 Part 15) | The value resulting from application of __digitalSignatureReference__Implemented as the digital signature format specified in Part 15
+| Attribute | digitalSignatureValue | Value derived from the digital signature | 1..++*++ | S100_DigitalSignatureValue(see S-100 Part 15) | The value resulting from application of __digitalSignatureReference__ Implemented as the digital signature format specified in Part 15.
+There must be at least one signature on the file as included in the exchange set.
+
 | Attribute | compressionFlag | Indicates if the resource is compressed | 1 | Boolean
 | _true_ indicates a compressed resource +
 _false_ indicates an uncompressed resource
@@ -592,10 +573,9 @@ _false_ indicates an uncompressed resource
 |===
 h| Role Name h| Name h| Description h| Code h| Remarks
 
-| Enumeration | S100_CatalogueScope       | The scope of the Catalogue       | - | -
+| Enumeration | S100_CatalogueScope       | The scope of the Catalogue       | - | Interoperability Catalogues are not implemented
 | Value       | featureCatalogue          | S-100 Feature Catalogue          | 1 |
 | Value       | portrayalCatalogue        | S-100 Portrayal Catalogue        | 2 |
-| Value       | interoperabilityCatalogue | S-100 Interoperability Catalogue | 3 |
 |===
 
 [[sec_14.2.5]]
@@ -753,5 +733,5 @@ their original national language using the complex attribute
 *feature name*.
 
 Character strings must be encoded using the character set defined
-in <<ISO 10646-1>>, in Unicode Transformation Format-8 (UTF-8).
+in <<ISO_10646_1>>, in Unicode Transformation Format-8 (UTF-8).
 A BOM (byte order mark) must not be used.

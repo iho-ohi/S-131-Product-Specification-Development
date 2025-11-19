@@ -2,17 +2,18 @@
 series: S
 :docnumber: 131
 :doctype: standard
-:edition: 1.0.0
+:edition: 2.0.0
 :language: en
-:published-date: 2022-12-31
-:copyright-year: 2022
-:committee: ircc
-:workgroup: ibsc
+:published-date: 2025-10-09
+:copyright-year: 2025
+:committee: hssc
+:workgroup: nipwg
 :mn-document-class: iho
-:mn-output-extensions: xml,html,doc,pdf,rxl
+:mn-output-extensions: pdf,rxl
 :local-cache-only:
 :data-uri-image:
 :imagesdir: images
+:status: draft-development
 
 
 [.preface]
@@ -30,14 +31,13 @@ h| Version Number h| Date h| Approved By h| Purpose
 | 1.0.0 | 2022-08-18 | | Draft 1
 | 1.0.0 | 2022-08-22 | | Revised Draft 1
 | 1.0.0 | 2022-11-25 | RM
-| Daft 2. Applied feedback from NIPWG after NIPWG9; added guidelines
+| Draft 2. Applied feedback from NIPWG after NIPWG9; added guidelines
 for portrayal of schedules and applicability; miscellaneous editorial
 revisions.
 | 1.0.0 | 2023-01-10 | RM
 | Added HarbourFacility to Figure 4.14; clarifications for ISO metadata
 and file naming; version date updated to sync. with other artefacts.
-
-| | | |
+| 2.0.0 | 2025-11-15 | RM | Draft Ed. 2.0.0
 | | | |
 | | | |
 | | | |
@@ -93,84 +93,78 @@ Catalogue, Portrayal Catalogue, and metadata.
 [bibliography]
 ==== Normative
 
-* [[[ISO_639_2_T,ISO 639-2]]] _Codes for the representation of names of languages -- Part 2: Alpha-3 code_
+* [[[ISO_639_2_T,ISO 639-2]]] Codes for the representation of names of languages -- Part 2: Alpha-3 code
 
-* [[[ISO_3166_1,ISO 3166-1]]] _Codes for the Representation of Names of Countries and their Subdivisions -- Part 1:_ _Country Codes_
+* [[[ISO_3166_1,ISO 3166-1]]] Codes for the Representation of Names of Countries and their Subdivisions -- Part 1: Country Codes
 
-* [[[IHO_M_3,IHO M-3]]] Resolutions of the International Hydrographic Organization, IHO Publication M-3, 2nd Edition, 2010 (updated April 2022).
+* [[[IHO_M_3,IHO M-3 2025]]] M-3: Resolutions of the International Hydrographic Organization, IHO Publication M-3, 2nd Edition, 2010 (updated July 2025). (link:++https://iho.int/uploads/user/pubs/misc/M3-E-2025.pdf++[])
 
-* [[[IHO_S_62,IHO S-62]]] List of Data Producer Codes (online), URL: link:++http://registry.iho.int/producercode/list.do++[]
+* [[[IHO_S_62,nofetch(IHO S-62)]]] S-62: List of Data Producer Codes (online), URL: link:++https://registry.iho.int/producercode/list.do++[]
 
-* [[[IHO_S_97,IHO S-97]]] IHO Guidelines for Creating S-100 Product Specifications, Edition 1.1.0, June 2020.
+* [[[IHO_S_97,nofetch(IHO S-97)]]] S-97: IHO Guidelines for Creating S-100 Product Specifications, Edition 2.0.0 (in preparation).
 
-* [[[IHO_S_98,IHO S-98]]] Data Product Interoperability in S-100 Navigation Systems, Edition 1.0.0, May 2022
+* [[[IHO_S_98,nofetch(IHO S-98)]]] S-98: Data Product Interoperability in S-100 Navigation Systems, Edition 2.0.0 (in preparation).
 
-* [[[IHO_S_100,IHO S-100]]] IHO Universal Hydrographic Data Model, Edition 5.0.0, December 2022.
+* [[[IHO_S_100,IHO S-100 5.2.0]]] IHO Universal Hydrographic Data Model, Edition 5.2.0. International Hydrographic Organization, June 2024.
+
+* [[[IHO_S_158,IHO S-158]]] S-158: Validation Checks - Introduction and Structure, Edition 1.0.0, International Hydrographic Organization, February 2025.
+
+* [[[IHO_S158_100,IHO S-158:100]]] S-158:100: Universal Hydrographic Data Model Validation Checks, Edition 1.0.0, International Hydrographic Organization, February 2025.
+
+* [[[IHO_S_158_131,nofetch(IHO S-158:131)]]] S-158:131: Marine Harbour Infrastructure Validation Checks, Edition 1.0.0, International Hydrographic Organization. (In preparation.)
 
 [[sec_1.3.2]]
 [bibliography]
 ==== Informative
 
-* [[[NIST_FIPS_186,NIST FIPS 186]]] _Federal Information Processing Standards -- Digital Signature Standard_
+EDITOR: FIPS 186 has undergone multiple updates, the latest is 186-5 - any reason to keep citing FIPS 186?
 
-* [[[IALA_G1143,IALA G1143]]] _Unique Identifiers for Maritime Resources_, Edition 3.0. International Association of Marine Aids to Navigation and Lighthouse Authorities, June 2021.
+* [[[NIST_FIPS_186,nofetch(NIST FIPS 186)]]] FIPS 186-5: Federal Information Processing Standards -- Digital Signature Standard, National Institute of Standards and Technology (NIST) (link:++https://csrc.nist.gov/pubs/fips/186-5/final++[]).
 
-* [[[ISO_8601_2004,ISO 8601:2004]]] _Data Elements and Interchange Formats -- Information Interchange -- Representation of Dates and Times_
+* [[[IALA_G1143,nofetch((G1143)IALA G1143)]]] IALA G1143: Unique Identifiers for Maritime Resources.
+International Association of Marine Aids to Navigation and Lighthouse Authorities, Edition 3.1, June 2021 (link:++https://www.iala.int/product/g1143/++[]).
 
-* [[[ISO_19101_2003,ISO 19101:2003]]] _Geographic Information -- Reference Model_
+* [[[ISO_8601_2004,ISO 8601:2004]]] Data Elements and Interchange Formats -- Information Interchange -- Representation of Dates and Times
 
-* [[[ISO_19103_2005,ISO 19103:2005]]] _Geographic Information -- Conceptual Schema Language_
+* [[[ISO_19101_2003,ISO 19101:2002]]] Geographic Information -- Reference Model
 
-* [[[ISO_19103_2_2005,ISO 19103-2:2005]]] _Geographic Information -- Conceptual Schema Language -- Part 2_
+* [[[ISO_19103_2005,ISO/TS 19103:2005]]] Geographic Information -- Conceptual Schema Language
 
-* [[[ISO_19108_2002,ISO 19108:2002]]] _Geographic Information -- Temporal Schema_
+* [[[ISO_19108_2002,ISO 19108:2002]]] Geographic Information -- Temporal Schema
 
-* [[[ISO_19109_2005,ISO 19109:2005]]] _Geographic Information -- Rules for Application Schema_
+* [[[ISO_19109_2005,ISO 19109:2005]]] Geographic Information -- Rules for Application Schema
 
-* [[[ISO_19110_2005,ISO 19110:2005]]] _Geographic Information -- Methodology for Feature Cataloguing_
+* [[[ISO_19110_2005,ISO 19110:2005]]] Geographic Information -- Methodology for Feature Cataloguing
 
-* [[[ISO_19111_2007,ISO 19111:2007]]] _Geographic Information -- Spatial Referencing by Coordinates_
+* [[[ISO_19111_2007,ISO 19111:2007]]] Geographic Information -- Spatial Referencing by Coordinates
 
-* [[[ISO_19115_1,ISO 19115-1]]] _Geographic information -- Metadata -- Part 1 - Fundamentals_. As amended by Amendment 01 (2018)
+* [[[ISO_19115_1,ISO 19115-1]]] Geographic information -- Metadata -- Part 1 - Fundamentals. As amended by Amendment 01 (2018)
 
-* [[[ISO_TS_19115_3,ISO/TS 19115-3]]] _Geographic information - Metadata - XML schema implementation for fundamental concepts_
+* [[[ISO_TS_19115_3,ISO/TS 19115-3]]] Geographic information - Metadata - XML schema implementation for fundamental concepts
 
-* [[[ISO_19117_2012,ISO 19117:2012]]] _Geographic Information -- Portrayal_
+* [[[ISO_19117_2012,ISO 19117:2012]]] Geographic Information -- Portrayal
 
-* [[[ISO_19131_2008,ISO 19131:2008]]] _Geographic Information -- Data Product Specifications_
+* [[[ISO_19131_2008,ISO 19131:2007]]] Geographic Information -- Data Product Specifications
 
-* [[[ISO_19157_2013,ISO 19157:2013]]] _Geographic Information -- Data Quality_
+* [[[ISO_19157_2013,ISO 19157:2013]]] Geographic Information -- Data Quality
 
-* [[[ISO_IEC_19501_2005,ISO/IEC 19501:2005]]] _Information Technology -- Unified Modelling Language (UML)_, Version 1.4.2
+* [[[ISO_IEC_19501_2005,ISO/IEC 19501:2005]]] Information Technology -- Unified Modelling Language (UML), Version 1.4.2
 
 * [[[ISO_IEC_19757_3,ISO/IEC 19757-3]]] Information technology -- Document Schema Definition Languages (DSDL) -- Part 3: Rule-based validation -- Schematron.
 
-* [[[IHO_S_44,IHO S-44]]] IHO Standards for Hydrographic Surveys, Edition 6.0.0, September 2020.
+* [[[IHO_S_44,IHO S-44]]] S-44: IHO Standards for Hydrographic Surveys, Edition 6.0.0, September 2020.
 
-* [[[IHO_S_58,IHO S-58]]] ENC Validation Checks, Edition 7.0.0, October 2022.
+* [[[IHO_S_101,IHO S-101]]] S-101: Electronic Navigational Chart Product Specification Edition 2.0.0, December 2024.
 
-* [[[IHO_S_101,IHO S-101]]] IHO Electronic Navigational Chart Product Specification Edition 1.1.0 (under development).
+* [[[ITPCO,nofetch((PIM)ITPCO)]]] ITPCO: Port Information Manual, Edition 3.02, Industry Partners, Standards Partners and Endorsers of the ITPCO, IHMA,
+IAPH and UKHO. International Taskforce Port Call Optimization (ITPCO), January 2021 (link:++https://portcalloptimization.org/images/Port%20Information%20Manual%203.02.pdf++[]).
 
-* [[[ITPCO,ITPCO]]] Port Information Manual for Nautical Data of BIMCO, IAPH, IHMA, IHO, ITPCO
-
-* [[[ISO_10646_1,hidden(ISO 10646-1)]]]
+* [[[ISO_10646_1,ISO/IEC 10646-1:2000]]]
 
 [[sec_1.4]]
 === Terms, definitions and abbreviations
 
 [[sec_1.4.1]]
-==== Use of language
-
-Within this document:
-
-* "Must" indicates a mandatory requirement.
-
-* "Should" indicates an optional requirement, that is the recommended
-process to be followed, but is not mandatory.
-
-* "May" means "allowed to" or "could possibly", and is not mandatory.
-
-[[sec_1.4.2]]
 [heading="terms and definitions"]
 ==== Terms and definitions
 
@@ -179,16 +173,16 @@ process to be followed, but is not mandatory.
 Closeness of agreement between a test result and the accepted reference
 values.
 
-NOTE: A test result can be from an observation or measurement.
+NOTE&#58; A test result can be from an observation or measurement.
 
 ===== aggregation
 
-Special form of {{association}} that specifies a whole-part relationship
+Special form of *association* that specifies a whole-part relationship
 between the aggregate (whole) and a component part.
 
 ===== alarm
 
-(MSC.302/A) a high-priority {{alert}}. Condition requiring immediate
+(MSC.302/A) a high-priority *alert*. Condition requiring immediate
 attention and action by the bridge team, to maintain the safe navigation
 of the ship.
 
@@ -196,7 +190,7 @@ of the ship.
 
 (MSC.302/A) announcement of abnormal situations and conditions requiring
 attention. Alerts are divided in four priorities: **emergency alarm**s,
-{{alarm,alarms}}, {{warning,warnings}} and {{caution,cautions}}.
+**alarm**s, **warning**s and **caution**s.
 An alert provides information about a defined state change in connection
 with information about how to announce this event in a defined way
 to the system and the operator.
@@ -214,39 +208,39 @@ connections among their instances.
 
 (1) Named property of an entity.
 
-NOTE: Describes a geometrical, topological, thematic, or other characteristic
+NOTE&#58; Describes a geometrical, topological, thematic, or other characteristic
 of an entity.
 
 (2) Feature within a classifier that describes a range of values that
 instances of the classifier may hold.
 
-NOTE: An attribute is semantically equivalent to a composition association;
+NOTE&#58; An attribute is semantically equivalent to a composition association;
 however, the intent and usage is normally different.
 
-NOTE: "Feature" used in this definition is the UML meaning of the
+NOTE&#58; "Feature" used in this definition is the UML meaning of the
 term.
 
 ===== boundary
 
 Set that represents the limit of an entity.
 
-NOTE: Boundary is most commonly used in the context of geometry, where
+NOTE&#58; Boundary is most commonly used in the context of geometry, where
 the set is a collection of points or a collection of objects that
 represent those points.
 
 ===== caution
 
-(MSC.302/A) lowest priority of an {{alert}}. Awareness of a condition
-which does not warrant an {{alarm}} or warning condition, but still
+(MSC.302/A) lowest priority of an *alert*. Awareness of a condition
+which does not warrant an *alarm* or warning condition, but still
 requires attention out of the ordinary consideration of the situation
 or of given information.
 
 ===== class
 
-Description of a set of objects that share the same {{attribute,attributes}},
-operations, methods, {{relationship,relationships}}, and semantics.
+Description of a set of objects that share the same *attribute*s,
+operations, methods, *relationship*s, and semantics.
 
-NOTE: A class represents a concept within the system being modelled.
+NOTE&#58; A class represents a concept within the system being modelled.
 Depending on the kind of model, the concept may be real-world (for
 an analysis model), or it may also contain algorithmic and computer
 implementation concepts (for a design model). A classifier is a generalization
@@ -255,35 +249,35 @@ actor and component.
 
 ===== classification
 
-The process of determining the appropriate {{data type}} within a
-{{feature catalogue}} for a particular real world feature, including
-consideration of {{data quality}}.
+The process of determining the appropriate *data type* within a
+*feature catalogue* for a particular real world feature, including
+consideration of *data quality*.
 
 ===== coordinate
 
-One of a sequence of n numbers designating the position of a {{point}}
+One of a sequence of n numbers designating the position of a *point*
 in n-dimensional space.
 
-NOTE: In a {{coordinate reference system}}, the coordinate numbers
+NOTE&#58; In a *coordinate reference system*, the coordinate numbers
 are qualified by units.
 
 ===== coordinate reference system
 
-{{coordinate,Coordinate}} system that is related to an object by a
+*Coordinate* system that is related to an object by a
 datum.
 
-NOTE: For geodetic and vertical datums, the object will be the Earth.
+NOTE&#58; For geodetic and vertical datums, the object will be the Earth.
 
 ===== coordinate tuple
 
-Ordered list of {{coordinate,coordinates}}.
+Ordered list of **coordinate**s.
 
 ===== curve
 
-1-dimensional {{geometric primitive}}, representing the continuous
+1-dimensional *geometric primitive*, representing the continuous
 image of a line.
 
-NOTE: The boundary of a curve is the set of points at either end of
+NOTE&#58; The boundary of a curve is the set of points at either end of
 the curve. If the curve is a cycle, the two ends are identical, and
 the curve (if topologically closed) is considered to not have a boundary.
 The first point is called the start point, and the last is the end
@@ -294,14 +288,14 @@ that a continuous image of a connected set is connected.
 ===== curve segment
 
 1-dimensional geometric object used to represent a continuous component
-of a {{curve}} using homogeneous interpolation and definition methods.
+of a *curve* using homogeneous interpolation and definition methods.
 
-NOTE: The geometric set represented by a single curve segment is equivalent
+NOTE&#58; The geometric set represented by a single curve segment is equivalent
 to a curve.
 
 ===== data product
 
-A {{dataset}} or dataset series that conforms to a data product specification.
+A *dataset* or dataset series that conforms to a data product specification.
 
 ===== data quality
 
@@ -313,10 +307,10 @@ of quality, an evaluation procedure, a quality result, and a scope.
 Specification of a value domain with operations allowed on values
 in this domain.
 
-NOTE: Data types include primitive predefined types and user-definable
+NOTE&#58; Data types include primitive predefined types and user-definable
 types.
 
-NOTE: A data type is identified by a term, for example Integer.
+NOTE&#58; A data type is identified by a term, for example Integer.
 
 [example]
 Integer, Real, Boolean, String, DirectPosition and Date
@@ -325,7 +319,7 @@ Integer, Real, Boolean, String, DirectPosition and Date
 
 An identifiable collection of data.
 
-NOTE: A dataset may be a smaller grouping of data which, though limited
+NOTE&#58; A dataset may be a smaller grouping of data which, though limited
 by some constraint such as spatial extent or feature type,is located
 physically within a larger dataset. Theoretically, a dataset may be
 as small as a single feature contained within a larger dataset.
@@ -334,44 +328,26 @@ A hardcopy map or chart may be considered a dataset.
 ===== datum
 
 Parameter or set of parameters that define the position of the origin,
-the scale, and the orientation of a {{coordinate}} system.
+the scale, and the orientation of a *coordinate* system.
 
 ===== display priority
 
-Hierarchy to determine which {{feature}} is to be displayed when two
+Hierarchy to determine which *feature* is to be displayed when two
 features overlap. Priority 2 overwrites 1.
 
-===== ecdis
-
-A navigation information system which with adequate back-up arrangements
-can be accepted as complying with the up-to-date chart required by
-regulations V/19 and V/27 of the 1974 SOLAS Convention, as amended,
-by displaying selected information from a System Electronic Navigational
-Chart (SENC) with positional information from navigation sensors to
-assist the Mariner in route planning and route monitoring, and if
-required display additional navigation-related information.
-
-===== enc
-
-The {{dataset}}, standardized as to content, structure and format,
-issued for use with {{ECDIS}} by or on the authority of a Government
-authorized Hydrographic Office or other relevant government institution,
-and conforming to IHO standards. The ENC contains all the chart information
-necessary for safe navigation and may contain supplementary information
-in addition to that contained in the paper chart which may be considered
-necessary for safe navigation.
+EDITOR: Removed "ecdis" and "enc" from Terms, they are defined as Abbreviations, and the definition of ECDIS references the obsolete "SENC"
 
 ===== enumeration
 
 A fixed list of valid identifiers of named literal values.
-{{attribute,Attributes}} of an enumerated type may only take values
+**Attribute**s of an enumerated type may only take values
 from this list.
 
 ===== feature
 
 Abstraction of real world phenomena.
 
-NOTE: A feature may occur as a type or an instance. Feature type or
+NOTE&#58; A feature may occur as a type or an instance. Feature type or
 feature instance should be used when only one is meant.
 
 [example]
@@ -380,24 +356,24 @@ with other phenomena into a feature type 'landmark'
 
 ===== feature association
 
-{{relationship,Relationship}} that links instances of one {{feature}}
-type with instances of the same or a different {{feature}} type.
+*Relationship* that links instances of one *feature*
+type with instances of the same or a different *feature* type.
 
 ===== feature attribute
 
-Characteristic of a {{feature}}.
+Characteristic of a *feature*.
 
-NOTE: A feature {{attribute}} may occur as a type or an instance.
+NOTE&#58; A feature *attribute* may occur as a type or an instance.
 Feature attribute type or feature attribute instance is used when
 only one is meant.
 
-NOTE: A feature {{attribute}} type has a name, a {{data type}} and
-a domain associated to it. A feature {{attribute}} instance has an
-attribute value taken from the value domain of the feature {{attribute}}
+NOTE&#58; A feature *attribute* type has a name, a *data type* and
+a domain associated to it. A feature *attribute* instance has an
+attribute value taken from the value domain of the feature *attribute*
 type.
 
-NOTE: In a {{feature catalogue}}, a feature {{attribute}} may include
-a value domain but does not specify {{attribute}} values for feature
+NOTE&#58; In a *feature catalogue*, a feature *attribute* may include
+a value domain but does not specify *attribute* values for feature
 instances.
 
 [example]
@@ -410,15 +386,15 @@ which belongs to the data type _real_
 
 ===== feature catalogue
 
-A catalogue containing definitions and descriptions of the {{feature}}
-types, {{feature attribute,feature attributes}}, and {{feature association,feature associations}} occurring in one or more sets of geographic data.
+A catalogue containing definitions and descriptions of the *feature*
+types, **feature attribute**s, and **feature association**s occurring in one or more sets of geographic data.
 
 ===== geometric primitive
 
 Geometric object representing a single, connected, homogeneous element
 of geometry.
 
-NOTE: Geometric primitives are non-decomposed objects that present
+NOTE&#58; Geometric primitives are non-decomposed objects that present
 information about geometric configuration. They include points, curves,
 surfaces, and solids.
 
@@ -441,7 +417,7 @@ or equipment.
 Entity to which a set of operations can be applied and which has a
 state that stores the effects of the operations.
 
-NOTE: See {{feature}}.
+NOTE&#58; See *feature*.
 
 ===== loxodrome
 
@@ -474,7 +450,7 @@ dataset.
 
 Abstraction of some aspects of universe of discourse.
 
-NOTE: A semantically complete abstraction of a system.
+NOTE&#58; A semantically complete abstraction of a system.
 
 ===== multiplicity
 
@@ -493,22 +469,22 @@ data.
 
 ===== point
 
-0-dimensional {{geometric primitive}}, representing a position.
+0-dimensional *geometric primitive*, representing a position.
 
-NOTE: The {{boundary}} of a point is the empty set.
+NOTE&#58; The *boundary* of a point is the empty set.
 
 ===== portrayal catalogue
 
-Collection of defined portrayals for a {{feature catalogue}}.
+Collection of defined portrayals for a *feature catalogue*.
 
-NOTE: Content of a portrayal catalogue includes portrayal functions,
+NOTE&#58; Content of a portrayal catalogue includes portrayal functions,
 symbols, and portrayal context.
 
 ===== relationship
 
 Semantic connection among model elements.
 
-NOTE: Kinds of relationships include association, generalization,
+NOTE&#58; Kinds of relationships include association, generalization,
 metarelationship, flow, and several kinds grouped under dependency.
 
 ===== scale minimum
@@ -519,10 +495,10 @@ at a scale of 1:90,000).
 
 ===== surface
 
-Connected 2-dimensional {{geometric primitive}}, representing the
+Connected 2-dimensional *geometric primitive*, representing the
 continuous image of a region of a plane.
 
-NOTE: The boundary of a surface is the set of oriented, closed {{curve,curves}}
+NOTE&#58; The boundary of a surface is the set of oriented, closed **curve**s
 that delineate the limits of the surface.
 
 ===== symbol size
@@ -533,8 +509,8 @@ a standard minimum screen.
 
 ===== text label
 
-A textual description of a {{feature}}. Can be formatted to include
-standard text as well as {{feature attribute}} values. For example,
+A textual description of a *feature*. Can be formatted to include
+standard text as well as *feature attribute* values. For example,
 light descriptions, place names etc.
 
 ===== transparent fill
@@ -551,13 +527,13 @@ to the Earth.
 
 ===== warning
 
-(MSC.302/A) {{alert}} for condition requiring immediate attention,
+(MSC.302/A) *alert* for condition requiring immediate attention,
 but no immediate action by the bridge team. Warnings are presented
 for precautionary reasons to make the bridge team aware of changed
 conditions which are not immediately hazardous, but may become so
 if no action is taken.
 
-[[sec_1.4.3]]
+[[sec_1.4.2]]
 ==== Abbreviations
 
 This product specification adopts the following convention for symbols
@@ -595,11 +571,7 @@ MHI:: Marine Harbour Infrastructure
 
 NIPWG:: Nautical Information Provision Working Group
 
-PNG:: Portable Network Graphics
-
 SD:: System Database
-
-SENC:: System Electronic Navigational Chart
 
 SOLAS:: Safety of Life at Sea
 
@@ -626,9 +598,22 @@ XSD:: XML Schema Definition
 XSLT:: eXtensible Stylesheet Language Transformations
 
 [[sec_1.5]]
+=== Use of language
+
+Within this document:
+
+* "Must" indicates a mandatory requirement.
+
+* "Should" indicates an optional requirement, that is the recommended
+process to be followed, but is not mandatory.
+
+* "May" means "allowed to" or "could possibly", and is not mandatory.
+
+
+[[sec_1.6]]
 === General data product description
 
-NOTE: This information contains general information about the data
+NOTE&#58; This information contains general information about the data
 product.
 
 *Title:*:: Marine Harbour Infrastructure
@@ -646,35 +631,32 @@ there will be relevant metadata data quality, production authority,
 data sources, and publication date.
 
 *Spatial Extent:*::
-
-*Description:*:: Global coverage of port and harbours and their environs.
-
-*East Bounding Longitude:*:: 180°
-
-*West Bounding Longitude:*:: -180°
-
-*North Bounding Latitude:*:: 90°
-
++
+--
+*Description:*:: Global coverage of ports and harbours and their environs. +
+*East Bounding Longitude:*:: 180° +
+*West Bounding Longitude:*:: -180° +
+*North Bounding Latitude:*:: 90° +
 *South Bounding Latitude:*:: -90°
+--
 
 *Purpose:*:: The purpose of an MHI dataset is to provide information
 to mariners for use in berth-to-berth navigation and voyage planning.
 
-[[sec_1.6]]
+[[sec_1.7]]
 === Data Product Specification metadata
 
-NOTE: The information in this clause identifies this Product Specification
+NOTE&#58; The information in this clause identifies this Product Specification
 and provides information about its creation and maintenance. Dataset
 metadata is described in a separate clause.
 
-*Title:*:: The International Hydrographic Organization Electronic
-Navigational Chart Product Specification
+*Title:*:: Marine Harbour Infrastructure Product Specification
 
-*S-100 Version:*:: 5.0.0
+*S-100 Version:*:: 5.2.0
 
-*S-131 Version:*:: 1.0.0
+*S-131 Version:*:: 2.0.0
 
-*Date:*:: December 2022
+*Date:*:: December 2025
 
 *Language:*:: English
 
@@ -692,7 +674,7 @@ Fax: + 377 93 10 81 40 +
 Email: mailto:++info@iho.int++[info@iho.int]
 --
 
-*URL:*:: link:++http://www.iho.int/++[www.iho.int]
+*URL:*:: link:++https://iho.int/++[iho.int]
 
 *Identifier:*:: S-131
 
@@ -702,16 +684,16 @@ established by the International Hydrographic Organization, and are
 made available via the IHO web site. Maintenance of the Product Specification
 must conform to IHO Resolution 2/2007, as amended.
 
-[[sec_1.7]]
+[[sec_1.8]]
 === IHO Product Specification maintenance
 
-[[sec_1.7.1]]
+[[sec_1.8.1]]
 ==== Introduction
 
 Changes to S-131 will be released by the IHO as a New Edition, revision,
 or clarification.
 
-[[sec_1.7.2]]
+[[sec_1.8.2]]
 ==== New Edition
 
 _New Editions_ of S-131 introduce significant changes. _New Editions_
@@ -721,7 +703,7 @@ _New Editions_ are likely to have a significant impact on either existing
 users or future users of S-131. All cumulative _revisions_ and _clarifications_
 must be included with the release of approved New Editions.
 
-[[sec_1.7.3]]
+[[sec_1.8.3]]
 ==== Revision
 
 _Revisions_ are defined as substantive semantic changes to S-131.
@@ -742,7 +724,7 @@ later version of the Feature and Portrayal Catalogues.
 In most cases a new Feature Catalogue will result in a _revision_
 of S-131.
 
-[[sec_1.7.4]]
+[[sec_1.8.4]]
 ==== Clarification
 
 _Clarifications_ are defined as non-substantive changes. Typically,
@@ -754,7 +736,7 @@ a data product.
 Changes in a _clarification_ are minor and ensure backward compatibility
 with the previous versions.
 
-[[sec_1.7.5]]
+[[sec_1.8.5]]
 ==== Version numbers
 
 The associated version control numbering to identify changes (n) to
@@ -851,11 +833,11 @@ S100_GF_InformationType respectively.
 
 [[fig_4.1]]
 .Realizations from the S-100 General Feature Model
-image::figure-1.png[]
+image::Fig&#32;4.1&#32;Realizations&#32;of&#32;S-100&#32;GFM.png[]
+
 
 [[sec_4.2]]
 === Application Schema
-
 S-131 conforms to the General Feature Model (GFM) from S-100
 Part 3. This document describes the Application Schema expressed in
 UML. This document contains only an overview of the S-131 application
@@ -888,7 +870,6 @@ right following an '=' sign.
 that cross one another.)
 * Where the association role or name is not explicitly shown, the
 default rules for roles and names apply:
-
 ** The role name is 'the<CLASSNAME>' where <CLASSNAME> is the name
 of the class to which that association end is linked.
 ** The association name is '<CLASSNAME1>_<CLASSNAME2>' where <CLASSNAME1>
@@ -924,7 +905,7 @@ S-101 ENCs.
 
 [[fig_4.2]]
 .Base classes in S-131
-image::figure-2.png[]
+image::S-131&#32;Base&#32;Classes.png[]
 
 [[sec_4.2.1.1]]
 ===== Overview of domain features and information types
@@ -958,7 +939,7 @@ by metadata as defined in the S-131 metadata package.
 
 [[fig_4.3]]
 .Overview of S-131 domain feature classes
-image::figure-3.png[]
+image::S-131&#32;Overview.png[]
 
 Information types model chunks of information associated to feature
 types. Information types may be associated to other information types
@@ -967,7 +948,7 @@ types used in S-131 are depicted in <<fig_4.4>>.
 
 [[fig_4.4]]
 .Information types
-image::figure-4.png[]
+image::S-131&#32;InfoTypesAbbreviated.png[]
 
 The abstract class *FeatureType* is an abstract class from which the
 geographic feature classes in the application schema are derived.
@@ -984,7 +965,7 @@ DCEG. <<fig_4.5>> depicts *FeatureType* and its attributes.
 
 [[fig_4.5]]
 .The root class FeatureType
-image::figure-5.png[]
+image::Fig&#32;4.5&#32;Root&#32;FeatureType.png[]
 
 The abstract class *InformationType* is an abstract class from which
 all the information type classes in the S-131 domain model
@@ -1001,7 +982,7 @@ depicts *InformationType* and its attributes.
 
 [[fig_4.6]]
 .The root class InformationType
-image::figure-6.png[]
+image::Fig&#32;4.6&#32;Root&#32;InfoType.png[]
 
 [[sec_4.2.1.2]]
 ===== Layout
@@ -1018,7 +999,7 @@ due to GI Registry conceptual limitations on re-use of concepts.
 
 [[fig_4.7]]
 .Layout features
-image::figure-7.png[]
+image::S-131&#32;Layout.png[]
 
 [[sec_4.2.1.3]]
 ===== Physical Infrastructure
@@ -1032,7 +1013,7 @@ concepts.
 
 [[fig_4.8]]
 .Physical Infrastructure features
-image::figure-8.png[]
+image::S-131&#32;Physical&#32;Infrastructure.png[]
 
 [[sec_4.2.1.4]]
 ===== Services
@@ -1046,11 +1027,11 @@ in <<fig_4.10>>
 
 [[fig_4.9]]
 .Port Services
-image::figure-9.png[]
+image::S-131&#32;Services.png[]
 
 [[fig_4.10]]
 .Service Enumerations and Codelists
-image::figure-10.png[]
+image::S-131&#32;Services&#32;Enumerations.png[]
 
 [[sec_4.2.1.5]]
 ===== Regulations
@@ -1103,7 +1084,7 @@ attributes of their generalizations *AbstractRxN* and *InformationType*
 
 [[fig_4.11]]
 .Regulations and other information types for primarily textual information
-image::figure-11.png[]
+image::S-131&#32;RXNTypes.png[]
 
 [[sec_4.2.1.6]]
 ===== Contact information
@@ -1113,7 +1094,7 @@ below.
 
 [[fig_4.12]]
 .Contact information
-image::figure-12.png[]
+image::S-131&#32;ContactDetails.png[]
 
 Contact information can be associated to an instance of an *Authority*
 information type as well as to any feature that is a subtype of
@@ -1123,7 +1104,7 @@ shows the associations to *ContactInformation*.
 
 [[fig_4.13]]
 .Associations to contact information
-image::figure-13.png[]
+image::S-131&#32;ContactDetails&#32;Associations.png[]
 
 [[sec_4.2.1.7]]
 ===== Supervising organizations and their service hours
@@ -1159,7 +1140,7 @@ The model for both kinds of schedules is shown in <<fig_4.13>>.
 
 [[fig_4.14]]
 .Working times and schedules
-image::figure-14.png[]
+image::S-131&#32;WorkingTimes.png[]
 
 The authority should be encoded only if its presence in the dataset
 conveys information that is useful to the end user. In S-131 this
@@ -1200,7 +1181,7 @@ object (or *NauticalInformation*, etc.).
 
 [[fig_4.15]]
 .Regulations, etc., applying to specific features
-image::figure-15.png[]
+image::S-131&#32;RulesForFeatures.png[]
 
 [[sec_4.2.1.9]]
 ===== Regulations applying only to vessels with specific characteristics or cargoes
@@ -1260,7 +1241,7 @@ define subsets of vessels according to specified characteristics.
 
 [[fig_4.16]]
 .Vessel subsets characterised by cargo, dimensions and capabilities
-image::figure-16.png[]
+image::S-131&#32;ShipCharacteristicSubsets.png[]
 
 Given the relevant subset of vessels, it can be associated to the
 appropriate feature, regulation, or report by a *PermissionType*,
@@ -1288,7 +1269,7 @@ limits, etc., and a given feature or service.
 
 [[fig_4.17]]
 .Applicability of rules, etc., to vessel categories
-image::figure-17.png[]
+image::S-131&#32;ApplicabilityAssociations.png[]
 
 *PermissionType* links a feature to an *Applicability*, and models
 a requirement, recommendation or prohibition on entry into a feature,
@@ -1338,7 +1319,7 @@ the nature of the content allows it. See <<fig_4.17>>.
 
 [[fig_4.18]]
 .Attachment of uncategorizable information to any feature or information type
-image::figure-18.png[]
+image::S-131&#32;SupplementaryInformation.png[]
 
 [[sec_4.2.1.11]]
 ===== "Wrapper" complex attributes
@@ -1347,11 +1328,11 @@ S-131 provides a general method for encoding some kinds of information
 using "wrapper" attributes that are basically a named type of text
 content. The information is encoded in narrative form in a *textContent*
 sub-attribute, which provides a general way to encode textual information.
-<<fig_4.18>> depicts the wrapper attributes.
+<<fig_4.19>> depicts the wrapper attributes.
 
 [[fig_4.19]]
 .Wrapper Attributes
-image::figure-19.png[]
+image::S-131&#32;Wrapper&#32;Attributes.png[]
 
 [[sec_4.2.1.12]]
 ===== Feature relationships
@@ -1388,7 +1369,7 @@ association.
 
 [[fig_4.20]]
 .Relationships between geographic features
-image::figure-20.png[]
+image::S-131&#32;Feature&#32;Associations.png[]
 
 [[sec_4.2.2]]
 ==== Meta Features
@@ -1407,7 +1388,7 @@ the datums for depths and elevations respectively.
 
 [[fig_4.21]]
 .Meta-feature classes
-image::figure-21.png[]
+image::S-131&#32;Meta&#32;Features.png[]
 
 [[sec_4.2.3]]
 ==== Spatial Quality Information Type
@@ -1419,7 +1400,7 @@ horizontal quality. See <<fig_4.22>>.
 
 [[fig_4.22]]
 .Spatial Quality
-image::figure-22.png[]
+image::S-131&#32;Spatial&#32;Quality.png[]
 
 [[sec_4.2.4]]
 ==== Cartographic Features
@@ -1433,7 +1414,7 @@ See <<fig_4.23>>.
 
 [[fig_4.23]]
 .Text Placement
-image::figure-23.png[]
+image::S-131&#32;Cartographic&#32;Features.png[]
 
 
 
@@ -1535,29 +1516,27 @@ h| Type h| Definition
 | Text or CharacterString | General text.
 | Date
 | A date gives values for year, month and day according to the Gregorian
-Calendar.
-
+Calendar. +
 In XML formats including S-131, the XML Schema standard type
 should be used instead of the ISO 8601 basic representation
 (which is not a standard type in XML).
 
-[example]
-1998-09-18
+EXAMPLE&#58; 1998-09-18
 | Truncated Date | A S100_TruncatedDate allows a date or partial date
 to be given. At least one of the year/month/day components must be
 present. Since S-131 uses XML formats for both dataset and metadata,
 the XML encoding of truncated dates must be used (i.e., the ISO 8601
 basic format is not used in S-131).
 
-Components:YYYY Year integer between
-0000 and 9999MM Month integer between 01 -- 12 (inclusive)DD Day integer
-between 01 and 28, 29, 30, or 31 (inclusive), consistent with year
-and month values if these are specifiedThis type can be used to encode
-recurring instants (see S-100 Part 3, clause 3-8).
+Components: +
+YYYY Year integer between 0000 and 9999 +
+MM Month integer between 01 -- 12 (inclusive) +
+DD Day integer between 01 and 28, 29, 30, or 31 (inclusive), consistent with year
+and month values if these are specified. +
+This type can be used to encode recurring instants (see S-100 Part 3, clause 3-8).
 
-[example]
-The appropriate XML Schema type should be used:--12-17 representing
-17 December of any year (conforming to the XML type gMonthDay)S-100
+EXAMPLE&#58; The appropriate XML Schema type should be used: `--12-17` representing
+17 December of any year (conforming to the XML type (gMonthDay). S-100
 Part 10b provides further details about encoding in GML datasets.
 
 | Time | A 24-hour time, it may contain a time zone. Since S-131 uses
@@ -1568,14 +1547,9 @@ In XML formats (including S-131), the XML Schema standard
 type should be used instead of the ISO 8601 basic representation
 (which is not a standard type in XML).
 
-[example]
-====
-18:30:59Z (local time in UTC);
-
-18:30:59+01:00 (local time with given offset);
-
+EXAMPLE&#58; 18:30:59Z (local time in UTC); +
+18:30:59+01:00 (local time with given offset); +
 18:30:59 (local time without an offset to UTC).
-====
 
 | Codelist
 | A type of flexible enumeration. A code list type is a list of literals
@@ -1583,20 +1557,17 @@ which may be extended only in conformance with specified rules.
 | URI | A uniform resource identifier as defined in RFC 3986. Character
 encoding of a URI shall follow the syntax rules defined in RFC 3986.
 
-[example]
-link:++http://registry.iho.int++[]
+EXAMPLE&#58; link:++http://registry.iho.int++[]
 | URL
 | A uniform resource locator (URL) is a URI that provides a means
 of locating the resource by describing its primary access mechanism
 (RFC 3986).
 
-[example]
-link:++http://registry.iho.int++[]
+EXAMPLE&#58; link:++http://registry.iho.int++[]
 | URN | A persistent, location-independent, resource identifier that
 follows the syntax and semantics for URNs specified in RFC 2141.
 
-[example]
-urn:iho:s101:1:0:0:AnchorageArea
+EXAMPLE&#58; urn:iho:s101:1:0:0:AnchorageArea
 
 |===
 
@@ -1613,15 +1584,7 @@ are not shown in this figure).
 
 [[fig_5.1]]
 .Complex attribute
-image::figure-24.png[]
-
-[example]
-In the left example the complex attribute *topmark* has three sub
-attributes, one of which (*shape information*) is itself complex.
-The *Buoy Lateral* feature may optionally include one instance of
-*topmark*. In the right example the *Buoy Cardinal* feature may optionally
-include one instance of *topmark* (as for the left example) and one
-or more instances of *feature name*.
+image::Fig&#32;5.1&#32;Complex&#32;attribute.png[]
 
 [[sec_5.6]]
 === Units of measure
@@ -1836,7 +1799,7 @@ by OGC, which is link:++http://www.opengis.net/def/crs/EPSG/0/4326"++[]
 == Data Quality
 
 [[sec_8.1]]
-=== Introduction
+=== Introduction to Data Quality
 
 Data quality allows users and user systems to assess fitness for use
 of the provided data. Data quality measures and the associated evaluation
@@ -1852,17 +1815,228 @@ For S-131 the following data quality elements have been included:
 * Intended purpose of the data product;
 * Completeness of the data product in terms of coverage;
 * Logical consistency;
-* Depth uncertainty and accuracy;
 * Positional uncertainty and accuracy;
 * Thematic accuracy;
 * Temporal quality;
 * Aggregation measures;
 * Validation checks or conformance checks including:
+** General tests for dataset integrity; and
+** Specific tests for compliance against the S-131 data model.
 
-* General tests for dataset integrity; and
-* Specific tests for compliance against the S-131 data model.
+[[sec_C-8.2]]
+===	Completeness
 
-[[sec_8.2]]
+The presence and absence of features is described by the data quality elements Completeness (including commission and omission).
+Completeness should only be used on the feature type level, describing whether the features in the universe of discourse are found in the data set or not.
+
+[[sec_C-8.2.1]]
+====	Commission
+
+Commission is applicable for S-131.
+
+S-131 products must be tested with commission checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131. It is allowable to publish the data with a quality statement which indicates non-conformance.
+
+In terms of commission, S-131 products must at least populate numberOfExcessItems that indicates the number of items that should not have been present in the dataset, and numberOfDuplicateFeatureInstances that indicates the total number of exact duplications of feature instances within the data.
+
+[[sec_C-8.2.2]]
+====	Omission
+
+Omission is applicable for S-131.
+
+S-131 products must be tested with omission checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131. Data should only be published if it passes the test.
+
+In terms of omission, S-131 products must at least populate numberOfMissingItems that indicates the total number of missing items.
+
+[[sec_C-8.3]]
+===	Logical consistency
+
+[[sec_C-8.3.1]]
+====	Conceptual consistency
+
+Conceptual Consistency is applicable for S-131 and follows the guidelines from S-100 Part 1.
+
+S-131 products must be tested with conceptual consistency checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131. Data should only be published if it passes the test.
+
+In terms of conceptual consistency, S-131 products shall at least populate numberOfNonCompliantItems that is a count of all items in the dataset that are noncompliant to the rules of the Conceptual Schema.
+
+As a Product Specification with geometric surfaces, S-131 shall also at least populate numberOfInvalidSurfaceOverlaps that indicates the total number of erroneous overlaps within the data.
+
+
+[[sec_C-8.3.2]]
+====	Domain consistency
+
+Domain consistency is applicable for S-131 and follows the guidelines from S-100 Part 5.
+
+S-131 products must be tested with domain consistency checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131.
+Data should only be published if it passes the test.
+
+In terms of domain consistency, S-131 products must at least populate numberOfNonconformantItems that is a count of all items in the dataset that are not in conformance with their value domain.
+
+[[sec_C-8.3.3]]
+====	Format Consistency
+
+Format Consistency is applicable for S-131 and follows the guidelines from S-100 Part 10b.
+
+S-131 products must be tested with format consistency checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131.
+Data should only be published if it passes the test.
+
+In terms of Format Consistency, S-131 products must at least populate physicalStructureConflictsNumber that is a count of all items in the dataset that are stored in conflict with the physical structure of the dataset.
+
+[[sec_C-8.3.4]]
+====	Topological consistency
+
+Topological consistency is applicable for S-131 and follows the guidelines from S-100 Part 7.
+
+S-131 products must be tested with topological consistency checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131. Data should only be published if it passes the test.
+
+As a Product Specification with curves and geometric surfaces, S-131 products must at least populate:
+
+* rateOfFaultyPointCurveConnections that indicates the number of faulty link-node connections in relation to the number of supposed link-node connections;
+* numberOfMissingConnectionsUndershoots that is a count of items in the dataset within the parameter tolerance that are mismatched due to undershoots;
+* numberOfMissingConnectionsOvershoots that is a count of items in the dataset within the parameter tolerance that are mismatched due to overshoots;
+* numberOfInvalidSlivers that is a count of all items in the dataset that are invalid sliver surfaces;
+* numberOfInvalidSelfIntersects that is a count of all items in the dataset that illegally intersect with themselves; and
+* numberOfInvalidSelfOverlap that indicates all items in the dataset that illegally self-overlap.
+
+[[sec_C-8.4]]
+===	Positional uncertainty and accuracy
+
+[[sec_C-8.4.1]]
+====	Absolute or external accuracy
+
+[[sec_C-8.4.1.1]]
+=====	Vertical position accuracy
+
+Vertical position accuracy is applicable for S-131 and follows the guidelines from S-100 Part 4c.
+
+S-131 products must be tested with vertical position accuracy checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131.  Data should only be published if it passes the test.
+
+In terms of vertical position accuracy, S-131 products must at least populate linearMapAccuracy3Sigma that indicates the attribute value of uncertainty where half the length of the interval defined by an upper and lower limit in which the true value lies with a probability of 90%.
+
+[[sec_C-8.4.1.2]]
+=====	Horizontal position accuracy
+
+Horizontal position accuracy is applicable for S-131 and follows the guidelines from S-100 Part 4c.
+
+S-131 products must be tested with horizontal position accuracy checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131. Data should only be published if it passes the test.
+
+In terms of horizontal position accuracy, S-131 products must at least populate circularError95 that indicates the radius describing a circle in which the true point location lies with the probability of 95%.
+
+Recommendations on thresholds for Positional Accuracy / Absolute or External Accuracy are as follows:
+
+Maximum RMSE (horizontal) = E / 10000
+
+Maximum RMSE (vertical) = Vint / 6
+
+Where:
+
+E = Denominator of intended scale of mapping
+
+Vint = Normal contour line interval
+
+C-8.4.2	Relative or internal accuracy
+
+Relative or internal accuracy is applicable for S-131 and follows the guidelines from S-100 Part 4c.
+
+S-131 products must be tested with relative or internal accuracy checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131. It is allowable to publish the data with a quality statement which indicates non-conformance.
+
+In terms of relative or internal accuracy, S-131 products must populate one or both of relativeVerticalError that indicates an evaluation of the random errors of one relief feature to another in the same data set or on the same map/chart; and/or relativeHorizontalError that indicates an evaluation of the random errors in the horizontal position of one feature to another in the same data set or on the same map/chart.
+
+[[sec_C-8.4.3]]
+====	Gridded data positional accuracy
+
+Gridded data positional accuracy is not applicable for S-131 which is a Product Specification without objects that have a gridded coordinative value associated.
+
+
+[[sec_C-8.5]]
+===	Thematic accuracy
+
+[[sec_C-8.5.1]]
+====	Thematic classification correctness
+
+Thematic classification correctness is applicable for S-131 and follows the guidelines from S-100 Part 4c.
+
+S-131 products must be tested with thematic classification correctness checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131.  Data should only be published if it passes the test.
+
+In terms of thematic classification correctness, S-131 products must at least populate miscalculationRate that indicates the number of incorrectly classified features in relation to the number of features that are supposed to be there.
+
+[[sec_C-8.5.2]]
+====	Non-quantitative attribute accuracy
+
+Non-quantitative attribute accuracy is applicable for S-131 and follows the guidelines from S-100 Part 4c.
+
+S-131 products must be tested with non-quantitative attribute accuracy checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131. Data should only be published if it passes the test.
+
+The accuracy of non-quantitative attributes can be correct or incorrect. S-131 products shall at least populate numberOfIncorrectAttributeValues that is a count of all attribute values where the value is incorrect.
+
+[[sec_C-8.5.3]]
+====	Quantitative attribute accuracy
+
+Quantitative attribute accuracy is applicable for S-131 and follows the guidelines from S-100 Part 4c.
+
+S-131 products must be tested with quantitative attribute accuracy checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131. Data should only be published if it passes the test.
+
+The accuracy of quantitative attributes can be measured in terms of uncertainty intervals. S-131 products shall at least populate attributeValueUncertainty3Sigma that indicates the attribute value of uncertainty where half the length of the interval defined by an upper and lower limit in which the true value for the quantitative attribute lies with a probability of 95%.
+
+[[sec_C-8.6]]
+===	Temporal quality
+
+[[sec_C-8.6.1]]
+====	Temporal consistency
+
+Temporal Consistency is not applicable for S-131 which is a Product Specification without ordered events or sequences.
+
+[[sec_C-8.6.2]]
+====	Temporal validity
+
+Temporal validity is applicable for S-131 and follows the guidelines from S-100 Part 4c.
+
+S-131 products must be tested with temporal validity checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131. It is allowable to publish the data with a quality statement which indicates non-conformance.
+
+In terms of temporal validity, S-131 products must at least populate numberOfNonConformantItems that is a count of all items in the dataset that are not in conformance with their value domain.
+
+[[sec_C-8.6.3]]
+====	Temporal accuracy
+
+Temporal accuracy is applicable for S-131 and follows the guidelines from S-100 Part 4c.
+
+S-131 products must be tested with temporal accuracy checks prior to release by the Data Producer. The Data Producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are listed in S-158:131. It is allowable to publish the data with a quality statement which indicates non-conformance.
+
+In terms of temporal accuracy, S-131 products shall at least populate attributeValueUncertainty3Sigma that indicates the attribute value of uncertainty where half the length of the interval defined by an upper and lower limit in which the true value for the quantitative attribute lies with a probability of 95%.
+
+[[sec_C-8.7]]
+===	Aggregation
+
+Aggregation is applicable for S-131. The aggregated data quality result provides a result if the dataset has passed conformance to the Product Specification. A data set may be deemed to be of an acceptable aggregate quality even though one or more individual data quality results fails acceptance.
+
+The quality of an S-131 dataset may be represented by one aggregated data quality results (ADQR). The ADQR combines quality results from data quality evaluations based on different data quality elements including Commission, Omission, Conceptual Consistency, Format Consistency, Topological Consistency, Horizontal Position Accuracy and Thematic Classification Correctness.
+
+The aggregate data quality is determined by the formula:
+
+ADQR = v1 * v2 * v3 * . . . * vn
+
+Where n is the number of data quality measurement frames.
+
+Where:
+
+1 = Commission;
+
+2 = Omission;
+
+3 = Conceptual Consistency;
+
+4 = Format Consistency;
+
+5 = Topological Consistency;
+
+6 = Horizontal Position Accuracy; and
+
+7 = Thematic Classification Correctness.
+
+Each data quality result involved in the computation is given a Boolean value of one (1) if it passed and zero (0) if it failed. If ADQR=1, then the overall data set quality is deemed to be fully conformant, hence pass. If ADQR=0, then it is deemed non-conformant, hence fail.
+
+
+[[sec_C_8.8]]
 === Quality measure elements
 
 The data quality measures recommended in S-97 (Part C) and their applicability
@@ -1872,6 +2046,8 @@ data quality checklist recommended elements and replaces the final
 column with descriptions of the scope of the element in the context
 of S-131 datasets.
 
+[%landscape%]
+<<<
 [[table_8.1]]
 .Quality measure elements
 [cols="a,a,a,a,a,a"]
@@ -1892,6 +2068,7 @@ the total number of exact duplications of feature instances within the data.
 | 3 | Completeness / Omission | Data absent from the dataset, as described by the scope.
 | numberOfMissingItems / This data quality measure is an indicator that shows that a specific item is missing in the data.
 | dataset/dataset series/spatial object type | All features and info types
+| 4a| Logical Consistency / Conceptual Consistency | Adherence to the rules of a conceptual schema. | numberOfNonCompliantItems / This data quality measure is a count of all items in the dataset that are noncompliant to the rules of the Conceptual Schema. | spatial object / spatial object type | All features and info types
 | 4 | Logical Consistency / Conceptual Consistency | Adherence to the rules of a conceptual schema. | numberOfInvalidSurfaceOverlaps / This data quality measure is a count of the total number of erroneous overlaps within the data. Which surfaces may overlap and which must not is application dependent. Not all overlapping surfaces are necessarily erroneous. | spatial object / spatial object type | Features with surface geometry; spatial objects of type surface
 | 5 | Logical Consistency / Domain Consistency | Adherence of the values to the value domains. | numberOfNonconformantItems / This data quality measure is a count of all items in the dataset that are not in conformance with their value domain. | spatial object / spatial object type | All features and info types
 | 6 | Logical Consistency / Format Consistency | Degree to which data is stored in accordance with the physical structure of the data set, as described by the scope | physicalStructureConflictsNumber / This data quality measure is a count of all items in the dataset that are stored in conflict with the physical structure of the dataset. | dataset/dataset series | All features and info types
@@ -1902,34 +2079,35 @@ the total number of exact duplications of feature instances within the data.
 | 11 | Logical Consistency / Topological Consistency | Correctness of the explicitly encoded topological characteristics of the dataset, as described by the scope. | numberOfInvalidSelfIntersects / This data quality measure is a count of all items in the dataset that illegally intersect with themselves. | spatial object / spatial object type | Features with surface geometry; spatial objects of type surface or curve
 | 12 | Logical Consistency / Topological Consistency | Correctness of the explicitly encoded topological characteristics of the dataset, as described by the scope. | numberOfInvalidSelfOverlap / This data quality measure is a count of all items in the dataset that illegally self-overlap. | spatial object / spatial object type | Features with surface geometry; spatial objects of type surface or curve
 | 13 | Positional Accuracy / Absolute or External Accuracy | Closeness of reported coordinative values to values accepted as or being true. | Root Mean Square Error / Standard deviation, where the true value is not estimated from the observations but known a priori. | spatial object / spatial object type | objects that have coordinative values associated.
-| 14 | Positional Accuracy / Vertical Position Accuracy | Closeness of reported coordinative values to values accepted as or being true. | linearMapAccuracy2Sigma / Half length of the interval defined by an upper and lower limit in which the true value lies with probability 95%. | spatial object / spatial object type | N/A S-131 does not use 3-D coordinates..
-| 15 | Positional Accuracy / Horizontal Position Accuracy | Closeness of reported coordinative values to values accepted as or being true. | linearMapAccuracy2Sigma / Half length of the interval defined by an upper and lower limit in which the true value lies with probability 95%. | spatial object / spatial object type | objects that have a horizontal coordinate values associated.
-| 16 | Positional Accuracy / Gridded Data Position Accuracy | Closeness of reported coordinative values to values accepted as or being true. | Root mean square error of planimetry / Radius of a circle around the given point, in which the true value lies with probability P. | spatial object / spatial object type | NA. S-131 does not have features with gridded geometry
-| 17 | Temporal Quality / Temporal Consistency | Consistency with time. | Correctness of ordered events or sequences, if reported. | dataset/dataset series/spatial object type | Features with time intervals, fixed/periodic date ranges, schedules.
+| 14 | Positional Accuracy / Vertical Position Accuracy | Closeness of reported coordinative values to values accepted as or being true. | linearMapAccuracy3Sigma / Half length of the interval defined by an upper and lower limit in which the true value lies with probability 95%. | spatial object / spatial object type | N/A S-131 does not use 3-D coordinates..
+| 15 | Positional Accuracy / Horizontal Position Accuracy | Closeness of reported coordinative values to values accepted as or being true. | circularError95/Radius describing a circle in which the true point location lies with the probability of 95%. | spatial object / spatial object type | objects that have a horizontal coordinate values associated.
+| 16 | Positional Accuracy / Relative or Internal Accuracy | Closeness of the relative positions of features in a dataset to their respective relative positions accepted as or being true. | relativeVerticalError / An evaluation of the random errors of one relief feature to another in the same data set or on the same map / chart. It is a function of the random errors in the two elevations with respect to a common vertical datum. [Adapted from ISO 19157] | spatial object / spatial object type | PS with objects that have a coordinative value associated.
+| 17 | Positional Accuracy / Relative or Internal Accuracy | Closeness of the relative positions of features in a dataset to their respective relative positions accepted as or being true. | relativeHorizontalError / An evaluation of the random errors in the horizontal position of one feature to another in the same data set or on the same map/chart. [Adapted from ISO 19157] | spatial object / spatial object type | PS with objects that have a coordinative value associated.
+| 16 | Positional Accuracy / Gridded Data Position Accuracy | Closeness of reported coordinative values to values accepted as or being true. | RMSErrorPlanimetry / Radius of a circle around the given point, in which the true value lies with probability P. | spatial object / spatial object type | NA. S-131 does not have features with gridded geometry
+| 17 | Temporal Quality / Temporal Consistency | Correctness of ordered events or sequences, if reported. | chronologicalOrder / This data quality measure that indicate that an event is incorrectly ordered against the other events. [Adapted from ISO 19157] | dataset/dataset series/spatial object type | Features with time intervals, fixed/periodic date ranges, schedules.
+| 20 | Temporal Quality / Temporal Validity | Validity of data with respect to time | numberOfNonConformantItems / This data quality measure is a count of all items in the dataset that are not in conformance with their value domain. [Adapted from ISO 19157] | dataset/dataset series/spatial object type | Features with time intervals, fixed/periodic date ranges, schedules.
+| 23 | Thematic Accuracy / Non-Quantitative Attribute Accuracy | Correctness of non-quantitative attribute. | numberOfIncorrectAttributeValues / This data quality measure is count of the total number of erroneous attribute values within the relevant part of the dataset. It is a count of all attribute values where the value is incorrect. [Adapted from ISO 19157] | dataset/dataset series/spatial object type | Features and info types that have attributes with a non-quantitative attribute value.
+| 24 | Thematic Accuracy / Quantitative Attribute Accuracy | Accuracy of a quantitative attribute. | attributeValueUncertainty3Sigma / This data quality measure indicates the attribute value of uncertainty where half the length of the interval defined by an upper and lower limit in which the true value for the quantitative attribute lies with a probability of 95%. [Adapted from ISO 19157] | dataset/dataset series/spatial object type | Features and info types that have attributes with a quantitative attribute value.
+| 21 | Temporal Quality / DQ_AccuracyOfATimeMeasurement | Correctness of the temporal references of an item (reporting of error in time measurement) | attributeValueUncertainty3Sigma / This data quality measure indicates the attribute value of uncertainty where half the length of the interval defined by an upper and lower limit in which the true value for the quantitative attribute lies with a probability of 95%.  [Adapted from ISO 19157] | dataset/dataset series/spatial object type | Features with time intervals, fixed/periodic date ranges, schedules.
 | 18 | Thematic Accuracy / ThematicClassificationCorrectness | Comparison of the classes assigned to features or their attributes to a universe of discourse.
 | miscalculationRate / This data quality measure indicates the number of incorrectly classified features in relation to the number of features that are supposed to be there. [Adapted from <<ISO_19157_2013>>] +
 This is a RATE which is a ratio, and is expressed as a REAL number representing the rational fraction corresponding to the numerator and denominator of the ratio.
 
-For example, if there are 1 items that are classified incorrectly
-and there are 100 of the items in the dataset then the ratio is 1/100
-and the reported rate = 0.01.
+For example, if there are 1 items that are classified incorrectly and there are 100 of the items in the dataset then the ratio is 1/100 and the reported rate = 0.01.
 | dataset/dataset series/spatial object type | All features and info types
+| 23 | Thematic Accuracy / Non-Quantitative Attribute Accuracy | Correctness of non-quantitative attribute. | numberOfIncorrectAttributeValues / This data quality measure is count of the total number of erroneous attribute values within the relevant part of the dataset. It is a count of all attribute values where the value is incorrect. [Adapted from ISO 19157] | dataset/dataset series/spatial object type | Features and info types with non-quantitative attribute value.
+| 24 | Thematic Accuracy / Quantitative Attribute Accuracy | Accuracy of a quantitative attribute. | attributeValueUncertainty3Sigma / This data quality measure indicates the attribute value of uncertainty where half the length of the interval defined by an upper and lower limit in which the true value for the quantitative attribute lies with a probability of 95%. [Adapted from ISO 19157] | dataset/dataset series/spatial object type | Features and info types with quantitative attribute value.
 | 19 | Aggregation Measures / AggregationMeasures | In a data product specification, several requirements are set up for a product to conform to the specification. | DataProductSpecificationPassed / This data quality measure is a boolean indicating that all requirements in the referred data product specification are fulfilled. | dataset/dataset series/spatial object type | Dataset as a whole
-| 20 | Aggregation Measures / AggregationMeasures
-| In a data product specification, several requirements are set up
-for a product to conform to the specification.
-| DataProductSpecificationFailRate / This data quality measure is
-a number indicating the number of data product specification requirements
-that are not fulfilled by the current product/dataset in relation
-to the total number of data product specification requirements.
-| dataset/dataset series/spatial object type | Dataset as a whole
+| 20 | Aggregation Measures / AggregationMeasures | In a data product specification, several requirements are set up for a product to conform to the specification. | DataProductSpecificationFailRate / This data quality measure is a number indicating the number of data product specification requirements that are not fulfilled by the current product/dataset in relation to the total number of data product specification requirements. | dataset/dataset series/spatial object type | Dataset as a whole
 |===
 
+[%portrait%]
+<<<
 [[sec_8.3]]
 === Test methods for data compliance and usability
 
 Test methods for evaluating data compliance consist of executing the
-relevant tests from the Validation Checks (Annex D) for each quality
+relevant tests from the Validation Checks (S-158:131) for each quality
 element in <<table_8.1>> and counting the number of instances in the
 dataset which fail the checks for that quality element.
 
@@ -1953,66 +2131,15 @@ In addition to the above, dataset usability must be assessed against:
 * Intended user requirements in regard to coverage, scale and specific
 content requirements as defined by the Producing Agency and key stakeholders;
 
-* Conformance to established maintenance processes (see Clause X.X); and
+* Conformance to established maintenance processes; and
 
 * Overall compliance with the S-131 Product Specification, including
 context-specific evaluation of individual encoding instances for requirement
 of conformance to checks classified as "Error" and "Warning" in
-Annex D -- Validation Checks.
+S-158:100 (generic S-100 validation checks) and S-158:131 (product-specific validation checks).
 
 For dataset integrity requirements, see <<sec_13.8>>.
 
-[[sec_8.4]]
-=== Data quality testing and reporting
-
-S-131 products must be tested with the S-131 specific checks prior
-to release by the data producer. The data producer must review the
-check results and address any issues to ensure sufficient quality
-of the data products. The checks are a mix of data format validation
-checks, conformance to standard checks and logical consistency checks.
-The checks are listed in a separate Annex D.
-
-Production and certification processes for S-131 data may include
-a standalone quality report which provides full information on the
-original results (with evaluation procedures and measures applied).
-This report may be included in the exchange set as a support file
-(discovery metadata for data quality reports should indicate the datasets
-to which they apply and resource purpose "_other_"
-(_ISOMetadataFile_ if the report is in ISO format).
-
-Alternatively, a quality report distributed with the exchange set
-may describe only the aggregated results along with a reference to
-a location where the full results may be obtained.
-
-Data Quality Measure Aggregation results should be computed to indicate
-if the dataset/dataset series have passed the Product Specifications.
-The elements which must be included are described in <<table_8.2>>
-below.
-
-[[table_8.2]]
-.Elements of data quality aggregated report (extract from S-97 Part C checklist)
-[cols="5"]
-|===
-h| Data quality element and sub element h| Definition h| DQ measure / description h| Evaluation scope h| Applicable to spatial representation types
-
-| Aggregation Measures / AggregationMeasures
-| In a data product specification, several requirements are set up
-for a product to conform to the specification.
-| DataProductSpecificationPassed / This data quality measure is a
-boolean indicating that all requirements in the referred data product
-specification are fulfilled.
-| dataset | All features and information types of the dataset
-
-| Aggregation Measures / AggregationMeasures
-| In a data product specification, several requirements are set up
-for a product to conform to the specification.
-| DataProductSpecificationFailRate / This data quality measure is
-a number indicating the number of data product specification requirements
-that are not fulfilled by the current product/dataset in relation
-to the total number of data product specification requirements.
-| dataset | All features and information types of the dataset
-
-|===
 
 
 [[sec_9]]
@@ -2055,7 +2182,7 @@ as required.
 Data Producers should follow their established production processes
 for maintaining and updating datasets. Data must be maintained against
 S-131 Annex A -- _Data Classification and Encoding Guide_, checked
-against S-131 Annex D -- _Validation Checks_, and encapsulated in
+against validation checksin S-158:100 and S-158:131 (generic and product-specifc validation checks respectively), and encapsulated in
 GML conforming to the S-131 GML schema.
 
 [[sec_10.5]]
@@ -2099,10 +2226,10 @@ h| No. h| ISO class or attribute h| Type h| Value
 | --    | CI_Citation           | Class                          | --
 | 1     | title                 | CharacterString                | S-131 Portrayal Catalogue
 | 2     | date                  | CI_Date (class)                | --
-| 2.1   | date                  | DateTime                       | 2022-12-31 (or later - see note)
+| 2.1   | date                  | DateTime                       | 2025-12-31 (or later - see note)
 | 2.2   | dateType              | CI_DateTypeCode (ISO codelist) | publication
-| 3     | edition               | CharacterString                | 1.0.0
-| 4     | editionDate           | DateTime                       | 2022-12-31 (or later - see note)
+| 3     | edition               | CharacterString                | 2.0.0
+| 4     | editionDate           | DateTime                       | 2025-12-31 (or later - see note)
 | 5     | citedResponsibleParty | CI_Responsibility (class)      | --
 | 5.1   | role                  | CI_RoleCode (ISO codelist)     | publisher
 | 5.2   | party                 | CI_Organisation (class)        | --
@@ -2112,12 +2239,11 @@ h| No. h| ISO class or attribute h| Type h| Value
 | 7.1   | linkage               | CharacterString (URL)          | link:++https://registry.iho.int/++[]
 | 7.2   | name                  | CharacterString                | S-131 Portrayal Catalogue
 | 7.3 | description | CharacterString
-| XML Portrayal Catalogue accompanied by related files for symbols,
-colour profiles, rules, etc
+| XML Portrayal Catalogue accompanied by related files for symbols, colour profiles, rules, etc
 
 |===
 
-NOTE: As of the preparation of this document, development tools and
+NOTE&#58; As of the preparation of this document, development tools and
 viewers for S-100 GML datasets using S-100-conformant portrayal catalogues
 are not available. The portrayal catalogue may therefore need to be
 updated and later builds with later dates may become available as
@@ -2149,11 +2275,11 @@ ISO 639-2/T." These codes and the corresponding language names for
 display purposes may be obtained from the codelist _S100_MD_LanguageCode_
 in the S-100 codelists file, which is part of the S-100 schemas distribution
 footnote:[Available from link:++https://schemas.s100dev.net++[]. The XML and
-human-readable versions of the codelists file for S-100 Edition 5.0.0
+human-readable versions of the codelists file for S-100 Edition 5.2.0
 are located at
-link:++https://schemas.s100dev.net/schemas/S100/5.0.0/resources/Codelists/cat/codelists.xml++[]
+link:++https://schemas.s100dev.net/schemas/S100/5.2.0/resources/Codelists/cat/codelists.xml++[]
 and
-link:++https://schemas.s100dev.net/schemas/S100/5.0.0/resources/Codelists/cat/codelists.html++[]
+link:++https://schemas.s100dev.net/schemas/S100/5.2.0/resources/Codelists/cat/codelists.html++[]
 respectively.].
 
 [[sec_11.3.2]]
@@ -2247,7 +2373,7 @@ used for encoding schedule information, but if populated should be
 accessible via the "Notes" column or in header or trailer rows.
 ====
 
-Since S-100 Edition 5.0.0 portrayal does not provide for specifying
+Since S-100 Edition 5.2.0 portrayal does not provide for specifying
 templates for text formatting, the implementation of tabular forms
 must be left to implementers for this edition. As a provisional alternative,
 information may be displayed in text form, with rows of <<table_11.2>>
@@ -2297,7 +2423,7 @@ feature (for *PermissionType* associations).
 
 Tabular display or mixed tabular/text display of conditions is also
 allowable. The design of tabular forms is left to implementers in
-this edition since S-100 portrayal in Edition 5.0.0 does not provide
+this edition since S-100 portrayal in Edition 5.2.0 does not provide
 for the specification of table templates.
 
 
@@ -2326,7 +2452,7 @@ h| Name h| ISO 19131 Elements h| Value
 | Language | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.language | English
 | Character set | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.characterSet > MD_CharacterSetCode | 004 -- utf8
 | Additional Information | DPS_DeliveryInformation.additionalInformation > DPS.AdditionalInformation.additionalInformation
-| GML schema for S-131 Edition 1.0.0 (link:++https://schemas.s100dev.net++[])
+| GML schema for S-131 Edition 2.0.0 (link:++https://schemas.s100dev.net++[])
 
 |===
 
@@ -2496,19 +2622,19 @@ respectively.
 === Attribute multiplicity
 
 In general, if all the sub-attributes of a complex attribute are optional,
-at least one of them should be present and have a value that is not
+at least one of them must be present and have a value that is not
 empty (or white space, for attributes of type "text" or types derived
 from "text").
 
 Similarly, if all the attributes of an information type are optional,
-at least one of them should be present and have a non-empty value.
+at least one of them must be present and have a non-empty value.
 
 Note that there is no such general rule for features, though the DCEG
 may require it for specific features.
 
-These requirements are phrased as recommendations in Edition 1.0 in
+EDITOR: These requirements were phrased as recommendations in Edition 1.0 in
 order to facilitate the phased development of datasets. Future editions
-may strengthen them as appropriate.
+may strengthen them as appropriate. (Done in 2.0.0)
 
 
 [[sec_13]]
@@ -2530,8 +2656,8 @@ and dataset conform, which must have the same edition and revision
 components.
 
 [[fig_13.1]]
-.Components and associated metadata for the S-131 exchange set (S-100 5.0.0 Figure 17-2)
-image::figure-25.png[]
+.Components and associated metadata for the S-131 exchange set (S-100 Figure 17-2)
+image::S-131&#32;ExchangeSet.png[]
 
 The rules governing the presence and roles of the exchange set components
 depicted in <<fig_13.1>> are given below.
@@ -2549,31 +2675,12 @@ files:
 
 .. Text and picture support files referenced by datasets (*S100_SupportFile*).
 .. Language packs (*S100_SupportFile*).
-.. ISO metadata files (*ISOMetadataFile*).
 . Text and picture support files referenced in a dataset must be included
 in the exchange set.
-. The inclusion of language packs and ISO metadata files in exchange
+. The inclusion of language packs in exchange
 sets is optional.
-. The file represented by the class *ISOMetadataFile* is an XML file
-conforming to ISO 19115 3 format as specified in the ISO 19115-3 XML
-schemas supplied by the ISO. Each ISO metadata file, if present, must
-correspond to an S-131 dataset in the exchange catalogue.
-. Producers must not depend on ISO metadata files to convey information
-for ECDIS application processing, since processing these files is
-not an ECDIS requirement. All information necessary for ECDIS processing
-must be in CATALOG.XML. ISO metadata may be provided in exchange sets
-intended for dual-purpose use on ECDIS and another (ISO-aware) application
-such as some GIS.
 . Language packs are described in S-100 Part 18 and provide translations
 of feature catalogues.
-. If an ISO metadata file or a language pack is included, a support
-file discovery metadata block (*S100_SupportFileDiscoveryMetadata*)
-describing the file must be included in the exchange catalogue. The
-_supportFileSpecification_ field in the discovery block must specify
-the applicable ISO standard. The ISO metadata file may repeat information
-in the discovery blocks in the S-100 exchange catalogue. ISO metadata
-files are not required unless it is necessary to provide S-131 datasets
-for tools which require metadata in the <<ISO_19115_1>> format.
 . A signature file for the exchange catalogue must also be included
 in the exchange set (*S100_CatalogueSignature*).
 
@@ -2588,8 +2695,7 @@ since the exchange set structure is described in this clause.
 The metadata classes in <<fig_13.1>> are represented by XML files
 or XML blocks and are documented in <<sec_14.2>>.
 
-Each Exchange Set consists of one or more MHI datasets with an associated
-XML metadata file and a single Exchange Catalogue XML file containing
+Each Exchange Set consists of one or more MHI datasets and a single Exchange Catalogue XML file containing
 metadata. It may also include one or more support files (or no support
 files). The Exchange Set structure is the same as that described in
 S-100 Clause 17-4.2.
@@ -2633,6 +2739,8 @@ S-131 Exchange Set mechanism for datasets.
 
 [[sec_13.3.1]]
 ==== Types of Datasets
+
+EDITOR: Revisit cancellation depending on PT decision.
 
 <<table_13.1>> lists the types of datasets which may be produced and
 contained within an exchange set. The corresponding value of the dataset
@@ -2698,19 +2806,10 @@ datasets are named according to the specifications given below:
 
 The main part forms an identifier where:
 
-* The first three characters are always "131" and identify the dataset
-as an S-131 dataset.
+* The first three characters are always "131" and identify the dataset as an S-131 dataset.
 
-* The next four characters identify the issuing agency by its alphanumeric
-agency code in the IHO producer code register in the IHO GI Registry
-(i.e., the IHO is identified as "AA", not "1810"). Where the agency
-code consists of fewer than four characters, sufficient zeros must
-be suffixed to make the length exactly four characters (e.g., "AA00US00"
-instead of "US" - note that the 4-character code for IHO is exceptionally
-"00AA" based on current information about plans for 4-character codes)
-footnote:[Suffixing zeros is a temporary expedient pending conversion
-of the IHO producer code registry to 4-character codes. When 4-character
-IHO producer codes are published, they must be used.].
+* The next four characters identify the issuing agency by its four-character alphanumeric
+agency code in the IHO producer code register in the IHO GI Registry.
 
 Suffixing zeros is a temporary expedient pending conversion of the
 IHO producer code registry to 4-character codes. When 4-character
@@ -2861,14 +2960,16 @@ included in an MHI Exchange Set.
 * Plain text files must contain only general text as defined by this
 standard (text consisting only of printable characters and without
 HTML, XML, or other markup). The extension must be TXT.
-* HTML and XML files must contain only text and markup as defined
+* HTML files must contain only text and markup as defined
 in the relevant W3C standards. Files must use the UTF-8 character
-set encoding. References in datasets to HTML and XML support files
+set encoding. References in datasets to HTML or text support files
 must treat them as text files (i.e., they should not be referenced
 using attributes intended for picture files). The extension must be
-HTM for HTML files and XML for general XML files.
+HTM for HTML files and TXT for text files.
 * Picture files must be in TIFF (6.0 specification) and use the extension
 TIF.
+* XML files are allowed only for language packs and dictionaries such as the languages list included in the S-100 schema distribution
+footnote:[The languages list, other dictionaries, language packs, and portrayal catalogue files are expected to be distributed separately in special exchange sets and should not be included in ordinary MHI exchange sets.]
 
 [[table_.2]]
 .Support file formats and extensions
@@ -2878,15 +2979,10 @@ h| File Types h| Extensions h| Comment
 
 .3+| *Text* | TXT | Plain-text files
 
-| HTM
-| HTML files must only include inline or embedded Cascading Style
+| HTM | HTML files must only include inline or embedded Cascading Style
 Sheet (CSS) information and must not contain embedded Javascript or
 other dynamic content, for example DHTML, Flash etc.
 
-| XML
-| XML documents must only be included in accordance with guidance
-provided within the Data Classification and Encoding Guide
-(Annex A). This may include a Schema for the validation of XML documents.
 | *Picture* | TIF | Baseline TIFF 6.0.
 |===
 
@@ -2919,7 +3015,7 @@ can be used in any way by the Producer to provide the unique support
 file name. The following characters are allowed in the support file
 name: A to Z, 0 to 9 and the special character ++_++ (underscore).
 
-* .EEE -- support file extension. (TXT, HTM, XML or TIF).
+* .EEE -- support file extension. (TXT, HTM, TIF).
 
 * The maximum length of the file name (including the extension and
 preceding ".") is 64 characters.
@@ -2976,7 +3072,7 @@ of _fileLocator_ attributes) must be taken into account.
 of the file as well as the specific section referenced, the same criteria
 as picture files must be applied and a new TXT file created if there
 are objects that still need the old information.
-.. For HTML and XML files, instances may have _fileLocator_ attributes
+.. For HTML files, instances may have _fileLocator_ attributes
 that point to either HTML "anchors" (i.e., bookmarks) or specific
 sections identified by an "id" attribute. If some instances still
 need to reference the old information, there are two possible solutions:
@@ -2991,7 +3087,7 @@ their _fileReference_ and _fileLocator_ attributes updated.
 .. If there are no _fileLocator_ attributes in referencing instances,
 a new support file may be created or the existing support file may
 be updated to add the new information and facilitate locator attributes
-by adding HTML anchors or XML id attributes. The affected feature
+by adding HTML anchors or _id_ attributes. The affected feature
 or information type instances must be updated accordingly.
 
 . In all cases, the file content must be reviewed and updated to ensure
@@ -3044,8 +3140,7 @@ Update datasets must not exceed 500KB.
 [[sec_13.8]]
 === Data integrity and encryption
 
-Out of scope for S-131 Edition 1.0.0. Under development by S-100WG
-and will be included for Edition 2.0.0.
+Signatures are required for datasets and exchange sets intended for use on ECDIS, as described in S-100 Parts 15 and 17. Datasets may be encrypted or unencrypted as determined by producer policy.
 
 
 [[sec_14]]
@@ -3078,17 +3173,6 @@ metadata are included in <<sec_14.2>>, generally as remarks describing
 the extra conditions and restrictions imposed by S-131 (such as making
 an optional attribute mandatory).
 
-The S-131 product specification package includes an implementation
-of the S-131 constraints on metadata attributes) as Schematron rules
-in files available from the IHO schema server. The generic S-100 schemas
-distribution includes a similar implementation of "sanity checks"
-and S-100 constraints However, neither S-100 not S-131 mandate use
-of Schematron processors or the distributed Schematron rule files
-in implementations. Implementers may substitute any implementation
-method to apply or check constraints instead of using a Schematron-capable
-processor, including re-encoding the constraints in any suitable
-implementation-specific language.
-
 This clause defines the mandatory and optional metadata needed for
 S-131. In some cases (if provided by the producer or exchange set
 packager) the metadata may be repeated in a language other than English.
@@ -3107,12 +3191,12 @@ in <<sec_13.1>>.
 component discovery metadata blocks.
 
 [[fig_14.1]]
-.Relationship between exchange catalogue, discovery metadata, and dataset (from S-100 5.0.0 Figure 17-6).
+.Relationship between exchange catalogue, discovery metadata, and dataset (from S-100 5.2.0 Figure 17-6).
 image::figure-27.png[]
 
 The detailed structure of the S-131 exchange catalogue is depicted
 in <<fig_14.2>>. This figure is derived from Figure 17-7 in S-100
-Edition 5.0.0, with the following restriction:
+Edition 5.2.0, with the following restriction:
 
 * Elements that are optional in the generic S-100 catalogue model
 but not used in S-131 are not shown; for example, the ISO 8211 and
@@ -3120,7 +3204,7 @@ HDF5 formats in *S100_EncodingFormat*.
 
 [[fig_14.2]]
 .Details of exchange set catalogue classes. (Derived from S-100 Figure 17-7.)
-image::figure-28.png[]
+image::Fig&#32;14.2&#32;Exchange&#32;catalogue&#32;classes.png[]
 
 The following clauses define the mandatory and optional metadata needed
 for S-131. In some cases the metadata may be repeated in a national
@@ -3225,11 +3309,13 @@ and _boundingBox_ are mandatory in S-131.*
 _false_ indicates an uncompressed dataset resource
 | Attribute | dataProtection | Indicates if the data is encrypted | 1 | Boolean | _true_ indicates an encrypted dataset resource +
 _false_ indicates an unencrypted dataset resources
-| Attribute | protectionScheme | Specification of method used for data protection | 0..1 | S100_ProtectionScheme | In S-100 Edition 5.0.0 the only allowed value is "S100p15".
+| Attribute | protectionScheme | Specification of method used for data protection | 0..1 | S100_ProtectionScheme | In S-100 Edition 5.2.0 the only allowed value is "S100p15".
 
 | Attribute | digitalSignatureReference | Specifies the algorithm used to compute digitalSignatureValue | 1 | S100_DigitalSignatureReference (see S-100 Part 15) |
 
-| Attribute | digitalSignatureValue | Value derived from the digital signature | 1..++*++ | S100_DigitalSignatureValue (see S-100 Part 15) | The value resulting from application of __digitalSignatureReference__Implemented as the digital signature format specified in Part 15
+| Attribute | digitalSignatureValue | Value derived from the digital signature | 1..++*++ | S100_DigitalSignatureValue (see S-100 Part 15) | The value resulting from application of __digitalSignatureReference__. Implemented as the digital signature format specified in Part 15.
+There must be at least one signature on the file as included in the exchange set.
+
 | Attribute | copyright | Indicates if the dataset is copyrighted | 1 | Boolean | _true_ indicates the resource is copyrighted +
 _false_ Indicates the resource is not copyrighted
 | Attribute | classification | Indicates the security classification of the dataset | 0..1 | MD_SecurityConstraints> MD_ClassificationCode (codelist)
@@ -3317,7 +3403,7 @@ h| Name h| Description h| Multiplicity h| Type h| Remarks
 | *The optional S-100 attributes _temporalExtent_ and _approximateGridResolution_ are not used in S-131.*
 | boundingPolygon | A polygon which defines the actual data limit | 1 | EX_BoundingPolygon |
 | optimumDisplayScale | The scale with which the data is optimally displayed | 0..1 | Integer
-| Example: A scale of 1:25000 is encoded as 25000
+| Example&#58; A scale of 1:25000 is encoded as 25000
 | maximumDisplayScale | The maximum scale with which the data is displayed | 0..1 | Integer
 | Must be one of the following values:
 
@@ -3434,7 +3520,7 @@ systems (GNSS) such as the Global Positioning System (GPS)
 
 |===
 
-NOTE: The numeric codes are the codes specified in the IHO GI Registry
+NOTE&#58; The numeric codes are the codes specified in the IHO GI Registry
 for the equivalent listed values of the IHO Hydro domain attribute
 _Vertical Datum_.
 
@@ -3476,7 +3562,7 @@ a| Needed for S-98 interoperability.
 |===
 
 [[sec_14.2.2.7]]
-===== S100_CompiancyCategory
+===== S100_CompliancyCategory
 
 [cols="a,a,a,a,a",options="unnumbered"]
 |===
@@ -3520,11 +3606,11 @@ h| Role Name h| Name h| Description h| Mult. h| Type h| Remarks
 _false_ indicates an uncompressed resource
 | Attribute | digitalSignatureReference | Specifies the algorithm used to compute digitalSignatureValue | 1 | S100_DigitalSignatureReference(see Part 15) |
 
-| Attribute | digitalSignatureValue | Value derived from the digital signature | 1..++*++ | S100_DigitalSignatureValue(see Part 15) | The value resulting from application of digitalSignatureReferenceImplemented as the digital signature format specified in S-100 Part 15
-| Attribute | defaultLocale | Default language and character set used in the support file | 0..1 | PT_Locale | In absence of defaultLocale the language is English in UTF-8A support file is expected to use only one as locale. Additional support files can be created for other locales.
-| Attribute | supportedResource | Identifier of the resource supported by this support file | 0..++*++ | CharacterString | Conventions for identifiers are still to be developed in S-100.
+| Attribute | digitalSignatureValue | Value derived from the digital signature | 1..++*++ | S100_DigitalSignatureValue(see Part 15) | The value resulting from application of digitalSignatureReference. Implemented as the digital signature format specified in S-100 Part 15.
+There must be at least one signature on the file as included in the exchange set.
 
-In the interim, S-131 will use the name of the feature catalogue file or the name of the dataset, as appropriate.
+| Attribute | defaultLocale | Default language and character set used in the support file | 0..1 | PT_Locale | In absence of defaultLocale the language is English in UTF-8A support file is expected to use only one as locale. Additional support files can be created for other locales.
+| Attribute | supportedResource | Identifier of the resource supported by this support file | 0..++*++ | CharacterString | Conventions for identifiers are  detailed in S-100 Part 15. S-100 allows file URI, digital signature or cryptographic hash checksums to be used.
 | Attribute | resourcePurpose | The purpose of the supporting resource | 0..1 | S100_ResourcePurpose | Identifies how the supporting resource is used
 
 |===
@@ -3539,9 +3625,8 @@ h| Role Name h| Name h| Description h| Code h| Remarks
 | Enumeration | S100_SupportFileFormat | The format used for the support file | -
 | *Values listed in S-100 Part 17 but not mentioned in this table
 are not allowed*
-| Value | ASCII | UTF-8 text excluding control codes | 1 | Text
+| Value | TXT_UTF-8 | UTF-8 text excluding control codes | 1 | Text
 | Value | HTML | Hypertext Markup Language | 3 |
-| Value | XML | Extensible Markup Language | 4 |
 | Value | TIFF | Tagged Image File Format | 7 |
 
 |===
@@ -3583,21 +3668,10 @@ h| Role Name h| Name h| Description h| Mult h| Type h| Remarks
 |===
 h| Role Name h| Name h| Description h| Code h| Remarks
 
-| Enumeration | S100_ResourcePurpose      | Defines the purpose of the supporting resource  | - | -
-| Value       | dataset                   | A dataset                                       | 1 |
-| Value       | featureCatalogue          | A Feature Catalogue for an S-100 data product   | 2 |
-| Value       | portrayalCatalogue        | A Portrayal Catalogue for an S-100 data product | 3 |
-| Value       | interoperabilityCatalogue | An Interoperability Catalogue                   | 4 |
-| Value       | supportFile               | A support file                                  | 5 |
-| Value       | productVersion    | All datasets conforming to a specific version of an S-100 Product Specification | 6 |
-| Value       | productFamily     | All datasets conforming to any active version of an S-100 Product Specification | 7 |
-| Value       | software          | Application software                                                              | 8 |
-| Value       | system            | Provides support or common information for a variety of applications and products | 9 |
-| Value       | exchangeCatalogue | An Exchange Catalogue                      | 10  |
-| Value       | ISO Metadata      | Dataset metadata in ISO format             | 11  |
-| Value       | Language Pack     | A Language pack                            | 12  |
-| Value       | GML Schema        | GML Application Schema                     | 13  |
-| Value       | other             | A type of resource not otherwise described | 100 |
+| Enumeration | S100_ResourcePurpose    | Defines the purpose of the supporting resource  | - | The values ISOMetadata and GMLSchema are not permitted
+| Value       | supportFile             | A support file                                  | 1 |
+| Value       | languagePack            | A Language pack                                 | 3  |
+| Value       | other                   | A type of resource not otherwise described      | 100  |
 
 |===
 
@@ -3625,7 +3699,9 @@ _5_ cancellationDefault is new edition
 | Attribute | productSpecification | The Product Specification used to create this file | 1 | S100_ProductSpecification |
 | Attribute | digitalSignatureReference | Specifies the algorithm used to compute digitalSignatureValue | 1 | S100_DigitalSignatureReference(see S-100 Part 15) |
 
-| Attribute | digitalSignatureValue | Value derived from the digital signature | 1..++*++ | S100_DigitalSignatureValue(see S-100 Part 15) | The value resulting from application of __digitalSignatureReference__Implemented as the digital signature format specified in Part 15
+| Attribute | digitalSignatureValue | Value derived from the digital signature | 1..++*++ | S100_DigitalSignatureValue(see S-100 Part 15) | The value resulting from application of __digitalSignatureReference__ Implemented as the digital signature format specified in Part 15.
+There must be at least one signature on the file as included in the exchange set.
+
 | Attribute | compressionFlag | Indicates if the resource is compressed | 1 | Boolean
 | _true_ indicates a compressed resource +
 _false_ indicates an uncompressed resource
@@ -3641,10 +3717,9 @@ _false_ indicates an uncompressed resource
 |===
 h| Role Name h| Name h| Description h| Code h| Remarks
 
-| Enumeration | S100_CatalogueScope       | The scope of the Catalogue       | - | -
+| Enumeration | S100_CatalogueScope       | The scope of the Catalogue       | - | Interoperability Catalogues are not implemented
 | Value       | featureCatalogue          | S-100 Feature Catalogue          | 1 |
 | Value       | portrayalCatalogue        | S-100 Portrayal Catalogue        | 2 |
-| Value       | interoperabilityCatalogue | S-100 Interoperability Catalogue | 3 |
 |===
 
 [[sec_14.2.5]]
@@ -3802,26 +3877,22 @@ their original national language using the complex attribute
 *feature name*.
 
 Character strings must be encoded using the character set defined
-in <<ISO 10646-1>>, in Unicode Transformation Format-8 (UTF-8).
+in <<ISO_10646_1>>, in Unicode Transformation Format-8 (UTF-8).
 A BOM (byte order mark) must not be used.
 
 
 == LIST OF ANNEXES
 
-These Annexes are separate files and can be found either in the S-131
-Product Specification distribution package or at the locations indicated.
+These Annexes are separate files and can be found either in the S-131 Product Specification distribution package or at the locations indicated.
 
-Annex A:: Data Classification and Encoding Guide. Separate document.
-IHO Geospatial Information Registry, link:++https://registry.iho.int++[]
+Annex A:: Data Classification and Encoding Guide. Separate document. IHO Geospatial Information Registry, link:++https://registry.iho.int++[]
 
-Annex B:: Encoding Format. GML schema, Schematron rule files, and
-schema documentation. S-100 schema server, link:++https://schemas.s100dev.net++[].
+Annex B:: Encoding Format. GML schema, Schematron rule files, and schema documentation. S-100 schema server, link:++https://schemas.s100dev.net++[].
 
-Annex C:: Feature catalogue. XML file. IHO Geospatial Information
-Registry, link:++https://registry.iho.int++[]
+Annex C:: Feature catalogue. XML file. IHO Geospatial Information Registry, link:++https://registry.iho.int++[]
 
-Annex D:: Validation Checks. Separate document. IHO Geospatial Information
-Registry, link:++https://registry.iho.int++[]
+// Annex D:: Validation Checks. Separate document. IHO Geospatial Information Registry, link:++https://registry.iho.int++[]
 
-Annex E:: Portrayal Catalogue. Zip archive of portrayal catalogue.
-IHO Geospatial Information Registry, link:++https://registry.iho.int++[]
+// Annex E:: Portrayal Catalogue. Zip archive of portrayal catalogue. IHO Geospatial Information Registry, link:++https://registry.iho.int++[]
+
+Annex D:: Portrayal Catalogue. Zip archive of portrayal catalogue. IHO Geospatial Information Registry, link:++https://registry.iho.int++[]

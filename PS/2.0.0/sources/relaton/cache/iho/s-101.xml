@@ -1,12 +1,12 @@
 <bibdata type="standard" schema-version="v1.2.9">
-  <fetched>2025-09-16</fetched>
+  <fetched>2025-11-17</fetched>
   <title type="main" format="text/plain" language="en">ENC Product Specification</title>
   <title type="main" format="text/plain" language="fr">Spécification de produit pour les ENC</title>
-  <uri type="pdf">https://registry.iho.int/productspec/view.do?idx=203&amp;product_ID=S-101</uri>
+  <uri type="pdf">https://registry.iho.int/productspec/view.do?idx=78&amp;product_ID=S-101</uri>
   <docidentifier type="IHO" primary="true">S-101</docidentifier>
   <docnumber>101</docnumber>
   <date type="published">
-    <from>2024-12-27</from>
+    <from>2018-12-01</from>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -16,9 +16,9 @@
       <uri>www.iho.int</uri>
     </organization>
   </contributor>
-  <edition>2.0.0</edition>
+  <edition>1.0.0</edition>
   <version>
-    <revision-date>2024-12-27</revision-date>
+    <revision-date>2018-12-01</revision-date>
   </version>
   <language>en</language>
   <language>fr</language>
@@ -27,7 +27,7 @@
     <stage>in-force</stage>
   </status>
   <copyright>
-    <from>2024</from>
+    <from>2018</from>
     <owner>
       <organization>
         <name>International Hydrographic Organization</name>
@@ -47,7 +47,7 @@
   </series>
   <place>Monaco</place>
   <validity>
-    <validityBegins>2024-12-27 00:00</validityBegins>
+    <validityBegins>2018-12-01 00:00</validityBegins>
   </validity>
   <ext schema-version="v1.0.0">
     <editorialgroup>

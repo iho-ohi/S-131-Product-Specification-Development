@@ -2,17 +2,18 @@
 series: S
 :docnumber: 131
 :doctype: standard
-:edition: 1.0.0
+:edition: 2.0.0
 :language: en
-:published-date: 2022-12-31
-:copyright-year: 2022
-:committee: ircc
-:workgroup: ibsc
+:published-date: 2025-10-09
+:copyright-year: 2025
+:committee: hssc
+:workgroup: nipwg
 :mn-document-class: iho
-:mn-output-extensions: xml,html,doc,pdf,rxl
+:mn-output-extensions: pdf,rxl
 :local-cache-only:
 :data-uri-image:
 :imagesdir: images
+:status: draft-development
 
 include::sections/00-preface.adoc[]
 

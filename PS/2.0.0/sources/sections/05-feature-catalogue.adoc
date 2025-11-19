@@ -98,29 +98,27 @@ h| Type h| Definition
 | Text or CharacterString | General text.
 | Date
 | A date gives values for year, month and day according to the Gregorian
-Calendar.
-
+Calendar. +
 In XML formats including S-131, the XML Schema standard type
 should be used instead of the ISO 8601 basic representation
 (which is not a standard type in XML).
 
-[example]
-1998-09-18
+EXAMPLE&#58; 1998-09-18
 | Truncated Date | A S100_TruncatedDate allows a date or partial date
 to be given. At least one of the year/month/day components must be
 present. Since S-131 uses XML formats for both dataset and metadata,
 the XML encoding of truncated dates must be used (i.e., the ISO 8601
 basic format is not used in S-131).
 
-Components:YYYY Year integer between
-0000 and 9999MM Month integer between 01 -- 12 (inclusive)DD Day integer
-between 01 and 28, 29, 30, or 31 (inclusive), consistent with year
-and month values if these are specifiedThis type can be used to encode
-recurring instants (see S-100 Part 3, clause 3-8).
+Components: +
+YYYY Year integer between 0000 and 9999 +
+MM Month integer between 01 -- 12 (inclusive) +
+DD Day integer between 01 and 28, 29, 30, or 31 (inclusive), consistent with year
+and month values if these are specified. +
+This type can be used to encode recurring instants (see S-100 Part 3, clause 3-8).
 
-[example]
-The appropriate XML Schema type should be used:--12-17 representing
-17 December of any year (conforming to the XML type gMonthDay)S-100
+EXAMPLE&#58; The appropriate XML Schema type should be used: `--12-17` representing
+17 December of any year (conforming to the XML type (gMonthDay). S-100
 Part 10b provides further details about encoding in GML datasets.
 
 | Time | A 24-hour time, it may contain a time zone. Since S-131 uses
@@ -131,14 +129,9 @@ In XML formats (including S-131), the XML Schema standard
 type should be used instead of the ISO 8601 basic representation
 (which is not a standard type in XML).
 
-[example]
-====
-18:30:59Z (local time in UTC);
-
-18:30:59+01:00 (local time with given offset);
-
+EXAMPLE&#58; 18:30:59Z (local time in UTC); +
+18:30:59+01:00 (local time with given offset); +
 18:30:59 (local time without an offset to UTC).
-====
 
 | Codelist
 | A type of flexible enumeration. A code list type is a list of literals
@@ -146,20 +139,17 @@ which may be extended only in conformance with specified rules.
 | URI | A uniform resource identifier as defined in RFC 3986. Character
 encoding of a URI shall follow the syntax rules defined in RFC 3986.
 
-[example]
-http://registry.iho.int
+EXAMPLE&#58; http://registry.iho.int
 | URL
 | A uniform resource locator (URL) is a URI that provides a means
 of locating the resource by describing its primary access mechanism
 (RFC 3986).
 
-[example]
-http://registry.iho.int
+EXAMPLE&#58; http://registry.iho.int
 | URN | A persistent, location-independent, resource identifier that
 follows the syntax and semantics for URNs specified in RFC 2141.
 
-[example]
-urn:iho:s101:1:0:0:AnchorageArea
+EXAMPLE&#58; urn:iho:s101:1:0:0:AnchorageArea
 
 |===
 
@@ -176,15 +166,7 @@ are not shown in this figure).
 
 [[fig_5.1]]
 .Complex attribute
-image::figure-24.png[]
-
-[example]
-In the left example the complex attribute *topmark* has three sub
-attributes, one of which (*shape information*) is itself complex.
-The *Buoy Lateral* feature may optionally include one instance of
-*topmark*. In the right example the *Buoy Cardinal* feature may optionally
-include one instance of *topmark* (as for the left example) and one
-or more instances of *feature name*.
+image::Fig&#32;5.1&#32;Complex&#32;attribute.png[]
 
 [[sec_5.6]]
 === Units of measure

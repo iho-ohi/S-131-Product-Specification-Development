@@ -18,8 +18,8 @@ and dataset conform, which must have the same edition and revision
 components.
 
 [[fig_13.1]]
-.Components and associated metadata for the S-131 exchange set (S-100 5.0.0 Figure 17-2)
-image::figure-25.png[]
+.Components and associated metadata for the S-131 exchange set (S-100 Figure 17-2)
+image::S-131&#32;ExchangeSet.png[]
 
 The rules governing the presence and roles of the exchange set components
 depicted in <<fig_13.1>> are given below.
@@ -37,31 +37,12 @@ files:
 
 .. Text and picture support files referenced by datasets (*S100_SupportFile*).
 .. Language packs (*S100_SupportFile*).
-.. ISO metadata files (*ISOMetadataFile*).
 . Text and picture support files referenced in a dataset must be included
 in the exchange set.
-. The inclusion of language packs and ISO metadata files in exchange
+. The inclusion of language packs in exchange
 sets is optional.
-. The file represented by the class *ISOMetadataFile* is an XML file
-conforming to ISO 19115 3 format as specified in the ISO 19115-3 XML
-schemas supplied by the ISO. Each ISO metadata file, if present, must
-correspond to an S-131 dataset in the exchange catalogue.
-. Producers must not depend on ISO metadata files to convey information
-for ECDIS application processing, since processing these files is
-not an ECDIS requirement. All information necessary for ECDIS processing
-must be in CATALOG.XML. ISO metadata may be provided in exchange sets
-intended for dual-purpose use on ECDIS and another (ISO-aware) application
-such as some GIS.
 . Language packs are described in S-100 Part 18 and provide translations
 of feature catalogues.
-. If an ISO metadata file or a language pack is included, a support
-file discovery metadata block (*S100_SupportFileDiscoveryMetadata*)
-describing the file must be included in the exchange catalogue. The
-_supportFileSpecification_ field in the discovery block must specify
-the applicable ISO standard. The ISO metadata file may repeat information
-in the discovery blocks in the S-100 exchange catalogue. ISO metadata
-files are not required unless it is necessary to provide S-131 datasets
-for tools which require metadata in the <<ISO_19115_1>> format.
 . A signature file for the exchange catalogue must also be included
 in the exchange set (*S100_CatalogueSignature*).
 
@@ -76,8 +57,7 @@ since the exchange set structure is described in this clause.
 The metadata classes in <<fig_13.1>> are represented by XML files
 or XML blocks and are documented in <<sec_14.2>>.
 
-Each Exchange Set consists of one or more MHI datasets with an associated
-XML metadata file and a single Exchange Catalogue XML file containing
+Each Exchange Set consists of one or more MHI datasets and a single Exchange Catalogue XML file containing
 metadata. It may also include one or more support files (or no support
 files). The Exchange Set structure is the same as that described in
 S-100 Clause 17-4.2.
@@ -121,6 +101,8 @@ S-131 Exchange Set mechanism for datasets.
 
 [[sec_13.3.1]]
 ==== Types of Datasets
+
+EDITOR: Revisit cancellation depending on PT decision.
 
 <<table_13.1>> lists the types of datasets which may be produced and
 contained within an exchange set. The corresponding value of the dataset
@@ -186,19 +168,10 @@ datasets are named according to the specifications given below:
 
 The main part forms an identifier where:
 
-* The first three characters are always "131" and identify the dataset
-as an S-131 dataset.
+* The first three characters are always "131" and identify the dataset as an S-131 dataset.
 
-* The next four characters identify the issuing agency by its alphanumeric
-agency code in the IHO producer code register in the IHO GI Registry
-(i.e., the IHO is identified as "AA", not "1810"). Where the agency
-code consists of fewer than four characters, sufficient zeros must
-be suffixed to make the length exactly four characters (e.g., "AA00US00"
-instead of "US" - note that the 4-character code for IHO is exceptionally
-"00AA" based on current information about plans for 4-character codes)
-footnote:[Suffixing zeros is a temporary expedient pending conversion
-of the IHO producer code registry to 4-character codes. When 4-character
-IHO producer codes are published, they must be used.].
+* The next four characters identify the issuing agency by its four-character alphanumeric
+agency code in the IHO producer code register in the IHO GI Registry.
 
 Suffixing zeros is a temporary expedient pending conversion of the
 IHO producer code registry to 4-character codes. When 4-character
@@ -349,14 +322,16 @@ included in an MHI Exchange Set.
 * Plain text files must contain only general text as defined by this
 standard (text consisting only of printable characters and without
 HTML, XML, or other markup). The extension must be TXT.
-* HTML and XML files must contain only text and markup as defined
+* HTML files must contain only text and markup as defined
 in the relevant W3C standards. Files must use the UTF-8 character
-set encoding. References in datasets to HTML and XML support files
+set encoding. References in datasets to HTML or text support files
 must treat them as text files (i.e., they should not be referenced
 using attributes intended for picture files). The extension must be
-HTM for HTML files and XML for general XML files.
+HTM for HTML files and TXT for text files.
 * Picture files must be in TIFF (6.0 specification) and use the extension
 TIF.
+* XML files are allowed only for language packs and dictionaries such as the languages list included in the S-100 schema distribution
+footnote:[The languages list, other dictionaries, language packs, and portrayal catalogue files are expected to be distributed separately in special exchange sets and should not be included in ordinary MHI exchange sets.]
 
 [[table_.2]]
 .Support file formats and extensions
@@ -366,15 +341,10 @@ h| File Types h| Extensions h| Comment
 
 .3+| *Text* | TXT | Plain-text files
 
-| HTM
-| HTML files must only include inline or embedded Cascading Style
+| HTM | HTML files must only include inline or embedded Cascading Style
 Sheet (CSS) information and must not contain embedded Javascript or
 other dynamic content, for example DHTML, Flash etc.
 
-| XML 
-| XML documents must only be included in accordance with guidance
-provided within the Data Classification and Encoding Guide
-(Annex A). This may include a Schema for the validation of XML documents.
 | *Picture* | TIF | Baseline TIFF 6.0.
 |===
 
@@ -407,7 +377,7 @@ can be used in any way by the Producer to provide the unique support
 file name. The following characters are allowed in the support file
 name: A to Z, 0 to 9 and the special character ++_++ (underscore).
 
-* .EEE -- support file extension. (TXT, HTM, XML or TIF).
+* .EEE -- support file extension. (TXT, HTM, TIF).
 
 * The maximum length of the file name (including the extension and
 preceding ".") is 64 characters.
@@ -464,7 +434,7 @@ of _fileLocator_ attributes) must be taken into account.
 of the file as well as the specific section referenced, the same criteria
 as picture files must be applied and a new TXT file created if there
 are objects that still need the old information.
-.. For HTML and XML files, instances may have _fileLocator_ attributes
+.. For HTML files, instances may have _fileLocator_ attributes
 that point to either HTML "anchors" (i.e., bookmarks) or specific
 sections identified by an "id" attribute. If some instances still
 need to reference the old information, there are two possible solutions:
@@ -479,7 +449,7 @@ their _fileReference_ and _fileLocator_ attributes updated.
 .. If there are no _fileLocator_ attributes in referencing instances,
 a new support file may be created or the existing support file may
 be updated to add the new information and facilitate locator attributes
-by adding HTML anchors or XML id attributes. The affected feature
+by adding HTML anchors or _id_ attributes. The affected feature
 or information type instances must be updated accordingly.
 
 . In all cases, the file content must be reviewed and updated to ensure
@@ -532,5 +502,4 @@ Update datasets must not exceed 500KB.
 [[sec_13.8]]
 === Data integrity and encryption
 
-Out of scope for S-131 Edition 1.0.0. Under development by S-100WG
-and will be included for Edition 2.0.0.
+Signatures are required for datasets and exchange sets intended for use on ECDIS, as described in S-100 Parts 15 and 17. Datasets may be encrypted or unencrypted as determined by producer policy.

@@ -1,16 +1,15 @@
 <bibdata type="standard">
-<title type="main">IHO Marine Harbour Infrastructure (MHI) Product Specification</title>
-
-<docidentifier primary="true" type="IHO">S-131</docidentifier><docnumber>131</docnumber><date type="published"><on>2022-12-31</on></date><contributor><role type="author"/><organization>
+<title language="en" type="main">IHO Marine Harbour Infrastructure (MHI) Product Specification</title>
+<docidentifier primary="true" type="IHO">S-131</docidentifier><docnumber>131</docnumber><date type="published"><on>2025-10-09</on></date><contributor><role type="author"/><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="author"><description>committee</description></role><organization>
 <name>International Hydrographic Organization</name>
 <subdivision type="Committee">
-<name>ircc</name>
+<name>hssc</name>
 </subdivision><subdivision type="Workgroup">
-<name>ibsc</name>
+<name>nipwg</name>
 </subdivision></organization></contributor><contributor><role type="publisher"/><organization>
 <name>International Hydrographic Organization</name>
-<abbreviation>IHO</abbreviation></organization></contributor><edition>1.0.0</edition><language>en</language><script>Latn</script><status><stage>in-force</stage></status><copyright><from>2022</from><owner><organization>
+<abbreviation>IHO</abbreviation></organization></contributor><edition>2.0.0</edition><language>en</language><script>Latn</script><status><stage>draft-development</stage></status><copyright><from>2025</from><owner><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></owner></copyright><ext><doctype>standard</doctype><flavor>iho</flavor><structuredidentifier><docnumber>131</docnumber></structuredidentifier></ext></bibdata>

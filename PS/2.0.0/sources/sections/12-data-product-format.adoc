@@ -24,7 +24,7 @@ h| Name h| ISO 19131 Elements h| Value
 | Language | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.language | English
 | Character set | DPS_DeliveryInformation.deliveryFormat > DPS_DeliveryFormat.characterSet > MD_CharacterSetCode | 004 -- utf8
 | Additional Information | DPS_DeliveryInformation.additionalInformation > DPS.AdditionalInformation.additionalInformation
-| GML schema for S-131 Edition 1.0.0 (https://schemas.s100dev.net)
+| GML schema for S-131 Edition 2.0.0 (https://schemas.s100dev.net)
 
 |===
 
@@ -194,16 +194,16 @@ respectively.
 === Attribute multiplicity
 
 In general, if all the sub-attributes of a complex attribute are optional,
-at least one of them should be present and have a value that is not
+at least one of them must be present and have a value that is not
 empty (or white space, for attributes of type "text" or types derived
 from "text").
 
 Similarly, if all the attributes of an information type are optional,
-at least one of them should be present and have a non-empty value.
+at least one of them must be present and have a non-empty value.
 
 Note that there is no such general rule for features, though the DCEG
 may require it for specific features.
 
-These requirements are phrased as recommendations in Edition 1.0 in
+EDITOR: These requirements were phrased as recommendations in Edition 1.0 in
 order to facilitate the phased development of datasets. Future editions
-may strengthen them as appropriate.
+may strengthen them as appropriate. (Done in 2.0.0)

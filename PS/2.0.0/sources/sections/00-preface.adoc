@@ -14,14 +14,13 @@ h| Version Number h| Date h| Approved By h| Purpose
 | 1.0.0 | 2022-08-18 | | Draft 1
 | 1.0.0 | 2022-08-22 | | Revised Draft 1
 | 1.0.0 | 2022-11-25 | RM
-| Daft 2. Applied feedback from NIPWG after NIPWG9; added guidelines
+| Draft 2. Applied feedback from NIPWG after NIPWG9; added guidelines
 for portrayal of schedules and applicability; miscellaneous editorial
 revisions.
 | 1.0.0 | 2023-01-10 | RM
 | Added HarbourFacility to Figure 4.14; clarifications for ISO metadata
 and file naming; version date updated to sync. with other artefacts.
-
-| | | |
+| 2.0.0 | 2025-11-15 | RM | Draft Ed. 2.0.0
 | | | |
 | | | |
 | | | |
