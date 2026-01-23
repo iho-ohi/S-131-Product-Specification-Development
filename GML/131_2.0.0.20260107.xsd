@@ -14,7 +14,7 @@
               schemaLocation="https://schemas.s100dev.net/schemas/S100/5.0.0/S100GML/20220620/s100gmlbase.xsd"/>
    <!--    =============================================================================================
     Copyright, license, and disclaimer
-    © Copyright 2025,2026 International Hydrographic Organization (IHO)
+    © Copyright 2026 International Hydrographic Organization (IHO)
     
     License
     Certain parts of this document refer to or are based on the standards, documents, schemas, or other material
@@ -51,7 +51,7 @@
    <!-- producer: pointOfContact International Hydrographic Organization 4b quai Antoine 1er Monaco info@iho.int https://iho.int/ -->
    <!-- classification: unclassified -->
    <!-- S100_FC_DefinitionSources: IHO GI Registry http://registry.iho.int -->
-   <!-- Schema generated 2026-01-14T18:05:48-07:00 by Raphael Malyankar from catalogue file 131_FC_2.0.0.20260107.xml -->
+   <!-- Schema generated 2026-01-22T19:01:51-07:00 by Raphael Malyankar from catalogue file 131_FC_2.0.0.20260107.xml -->
    <xs:simpleType name="codelistTypeType">
       <xs:annotation>
          <xs:documentation>An S-100 codelist.</xs:documentation>
@@ -3991,75 +3991,6 @@
          </xs:enumeration>
       </xs:restriction>
    </xs:simpleType>
-   <xs:complexType name="PermissionType_categoryOfRelationshipType">
-      <xs:annotation>
-         <xs:documentation>Restricted values of categoryOfRelationship in PermissionType</xs:documentation>
-      </xs:annotation>
-      <xs:simpleContent>
-         <xs:extension base="PermissionType_categoryOfRelationshipLabel">
-            <xs:attribute name="code"
-                          type="PermissionType_categoryOfRelationshipCode"
-                          use="required"/>
-         </xs:extension>
-      </xs:simpleContent>
-   </xs:complexType>
-   <xs:simpleType name="PermissionType_categoryOfRelationshipLabel">
-      <xs:annotation>
-         <xs:documentation>Custom enum: PermissionType/categoryOfRelationship</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string">
-         <xs:enumeration value="Prohibited"/>
-         <xs:enumeration value="Not Recommended"/>
-         <xs:enumeration value="Permitted"/>
-         <xs:enumeration value="Recommended"/>
-         <xs:enumeration value="Required"/>
-         <xs:enumeration value="Not Required"/>
-         <xs:enumeration value="Exclusively Permitted"/>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType name="PermissionType_categoryOfRelationshipCode">
-      <xs:annotation>
-         <xs:documentation>Custom enum: PermissionType/categoryOfRelationship</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:integer">
-         <xs:enumeration value="1">
-            <xs:annotation>
-               <xs:documentation>Use of facility, waterway or service is forbidden.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="2">
-            <xs:annotation>
-               <xs:documentation>Use of facility, waterway or service is not recommended.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="3">
-            <xs:annotation>
-               <xs:documentation>Use of facility, waterway, or service is permitted but not required.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="4">
-            <xs:annotation>
-               <xs:documentation>Use of facility, waterway, or service is recommended.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="5">
-            <xs:annotation>
-               <xs:documentation>Use of facility, waterway, or service is required.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="6">
-            <xs:annotation>
-               <xs:documentation>Use of facility, waterway, or service is not required.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="7">
-            <xs:annotation>
-               <xs:documentation>Only vessels of the specified characteristics may use the facility, waterway, or service.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="0"/>
-      </xs:restriction>
-   </xs:simpleType>
    <xs:complexType name="categoryOfScheduleType">
       <xs:annotation>
          <xs:documentation>The type of schedule, for instance opening, closure, etc.</xs:documentation>
@@ -6702,43 +6633,6 @@
                <xs:documentation>Vessels with these characteristics are excluded from the regulation/restriction/recommendation/nautical information.</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:complexType name="InclusionType_membershipType">
-      <xs:annotation>
-         <xs:documentation>Restricted values of membership in InclusionType</xs:documentation>
-      </xs:annotation>
-      <xs:simpleContent>
-         <xs:extension base="InclusionType_membershipLabel">
-            <xs:attribute name="code" type="InclusionType_membershipCode" use="required"/>
-         </xs:extension>
-      </xs:simpleContent>
-   </xs:complexType>
-   <xs:simpleType name="InclusionType_membershipLabel">
-      <xs:annotation>
-         <xs:documentation>Custom enum: InclusionType/membership</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string">
-         <xs:enumeration value="Included"/>
-         <xs:enumeration value="Excluded"/>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType name="InclusionType_membershipCode">
-      <xs:annotation>
-         <xs:documentation>Custom enum: InclusionType/membership</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:integer">
-         <xs:enumeration value="1">
-            <xs:annotation>
-               <xs:documentation>Vessels with these characteristics are included in the regulation/restriction/recommendation/nautical information.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="2">
-            <xs:annotation>
-               <xs:documentation>Vessels with these characteristics are excluded from the regulation/restriction/recommendation/nautical information.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="0"/>
       </xs:restriction>
    </xs:simpleType>
    <xs:complexType name="methodOfSecuringType">
@@ -12273,14 +12167,17 @@
                      type="constructionInformation_conditionType"
                      minOccurs="0"
                      maxOccurs="1"/>
-         <xs:element name="development"
-                     type="developmentType"
-                     minOccurs="1"
-                     maxOccurs="1"
-                     nillable="true">
+         <xs:element name="development" minOccurs="1" maxOccurs="1" nillable="true">
             <xs:annotation>
                <xs:documentation>Is nillable</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:extension base="developmentType">
+                     <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                  </xs:extension>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
          <xs:element name="locationByText"
                      type="locationByTextType"
@@ -12322,13 +12219,19 @@
       </xs:annotation>
       <xs:sequence>
          <xs:element name="categoryOfDepthsDescription"
-                     type="depthsDescription_categoryOfDepthsDescriptionType"
                      minOccurs="1"
                      maxOccurs="1"
                      nillable="true">
             <xs:annotation>
                <xs:documentation>Is nillable</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:extension base="depthsDescription_categoryOfDepthsDescriptionType">
+                     <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                  </xs:extension>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
          <xs:element name="textContent"
                      type="textContentType"
@@ -12390,13 +12293,19 @@
                      minOccurs="0"
                      maxOccurs="1"/>
          <xs:element name="frequencyShoreStationTransmits"
-                     type="frequencyShoreStationTransmitsType"
                      minOccurs="1"
                      maxOccurs="1"
                      nillable="true">
             <xs:annotation>
                <xs:documentation>Is nillable</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:extension base="frequencyShoreStationTransmitsType">
+                     <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                  </xs:extension>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
@@ -12479,13 +12388,19 @@
       </xs:annotation>
       <xs:sequence>
          <xs:element name="uncertaintyFixed"
-                     type="uncertaintyFixedType"
                      minOccurs="1"
                      maxOccurs="1"
                      nillable="true">
             <xs:annotation>
                <xs:documentation>Is nillable</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:extension base="uncertaintyFixedType">
+                     <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                  </xs:extension>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
          <xs:element name="uncertaintyVariableFactor"
                      type="uncertaintyVariableFactorType"
@@ -12612,13 +12527,19 @@
                      minOccurs="0"
                      maxOccurs="1"/>
          <xs:element name="orientationValue"
-                     type="orientationValueType"
                      minOccurs="1"
                      maxOccurs="1"
                      nillable="true">
             <xs:annotation>
                <xs:documentation>Is nillable</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:extension base="orientationValueType">
+                     <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                  </xs:extension>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
@@ -12648,11 +12569,11 @@
       </xs:annotation>
       <xs:sequence>
          <xs:element name="categoryOfRxN"
-                     type="categoryOfRxNType"
+                     type="rxNCode_categoryOfRxNType"
                      minOccurs="0"
                      maxOccurs="1"/>
          <xs:element name="actionOrActivity"
-                     type="actionOrActivityType"
+                     type="rxNCode_actionOrActivityType"
                      minOccurs="0"
                      maxOccurs="1"/>
          <xs:element name="headline"
@@ -12733,14 +12654,17 @@
                      type="dateStartType"
                      minOccurs="0"
                      maxOccurs="1"/>
-         <xs:element name="dateEnd"
-                     type="dateEndType"
-                     minOccurs="1"
-                     maxOccurs="1"
-                     nillable="true">
+         <xs:element name="dateEnd" minOccurs="1" maxOccurs="1" nillable="true">
             <xs:annotation>
                <xs:documentation>Is nillable</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:complexContent>
+                  <xs:extension base="dateEndType">
+                     <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                  </xs:extension>
+               </xs:complexContent>
+            </xs:complexType>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
@@ -12754,13 +12678,19 @@
                      minOccurs="0"
                      maxOccurs="1"/>
          <xs:element name="telecommunicationIdentifier"
-                     type="telecommunicationIdentifierType"
                      minOccurs="1"
                      maxOccurs="1"
                      nillable="true">
             <xs:annotation>
                <xs:documentation>Is nillable</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:extension base="telecommunicationIdentifierType">
+                     <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                  </xs:extension>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
          <xs:element name="telecommunicationCarrier"
                      type="telecommunicationCarrierType"
@@ -12839,13 +12769,19 @@
       </xs:annotation>
       <xs:sequence>
          <xs:element name="uncertaintyFixed"
-                     type="uncertaintyFixedType"
                      minOccurs="1"
                      maxOccurs="1"
                      nillable="true">
             <xs:annotation>
                <xs:documentation>Is nillable</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:extension base="uncertaintyFixedType">
+                     <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                  </xs:extension>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
          <xs:element name="uncertaintyVariableFactor"
                      type="uncertaintyVariableFactorType"
@@ -12883,13 +12819,19 @@
             </xs:annotation>
          </xs:element>
          <xs:element name="vesselsCharacteristicsUnit"
-                     type="vesselMeasurementsSpecification_vesselsCharacteristicsUnitType"
                      minOccurs="1"
                      maxOccurs="1"
                      nillable="true">
             <xs:annotation>
                <xs:documentation>Is nillable</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:extension base="vesselMeasurementsSpecification_vesselsCharacteristicsUnitType">
+                     <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                  </xs:extension>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
@@ -13053,13 +12995,19 @@
          <xs:extension base="InformationTypeType">
             <xs:sequence>
                <xs:element name="categoryOfAuthority"
-                           type="Authority_categoryOfAuthorityType"
                            minOccurs="1"
                            maxOccurs="1"
                            nillable="true">
                   <xs:annotation>
                      <xs:documentation>Is nillable</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:extension base="Authority_categoryOfAuthorityType">
+                           <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                        </xs:extension>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="textContent"
                            type="textContentType"
@@ -13736,13 +13684,19 @@
                            minOccurs="0"
                            maxOccurs="1"/>
                <xs:element name="uNLocationCode"
-                           type="uNLocationCodeType"
                            minOccurs="1"
                            maxOccurs="1"
                            nillable="true">
                   <xs:annotation>
                      <xs:documentation>Is nillable</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:extension base="uNLocationCodeType">
+                           <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                        </xs:extension>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="terminalIdentifier"
                            type="terminalIdentifierType"
@@ -13996,13 +13950,19 @@
          <xs:extension base="HarbourPhysicalInfrastructureType">
             <xs:sequence>
                <xs:element name="categoryOfDolphin"
-                           type="Dolphin_categoryOfDolphinType"
                            minOccurs="1"
                            maxOccurs="unbounded"
                            nillable="true">
                   <xs:annotation>
                      <xs:documentation>Is nillable</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:extension base="Dolphin_categoryOfDolphinType">
+                           <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                        </xs:extension>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="geometry" maxOccurs="unbounded">
                   <xs:complexType>
@@ -14508,14 +14468,17 @@
                            type="MooringWarpingFacility_categoryOfMooringWarpingFacilityType"
                            minOccurs="0"
                            maxOccurs="1"/>
-               <xs:element name="iDCode"
-                           type="iDCodeType"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true">
+               <xs:element name="iDCode" minOccurs="1" maxOccurs="1" nillable="true">
                   <xs:annotation>
                      <xs:documentation>Is nillable</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:extension base="iDCodeType">
+                           <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                        </xs:extension>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="bollardDescription"
                            type="bollardDescriptionType"
@@ -15029,13 +14992,19 @@
                   </xs:annotation>
                </xs:element>
                <xs:element name="minimumDisplayScale"
-                           type="minimumDisplayScaleType"
                            minOccurs="1"
                            maxOccurs="1"
                            nillable="true">
                   <xs:annotation>
                      <xs:documentation>Is nillable</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:extension base="minimumDisplayScaleType">
+                           <xs:attribute name="nilReason" type="gml:NilReasonEnumeration" use="optional"/>
+                        </xs:extension>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="optimumDisplayScale"
                            type="optimumDisplayScaleType"

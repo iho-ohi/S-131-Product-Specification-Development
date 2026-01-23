@@ -5,8 +5,9 @@ Collaboration space for IHO Nautical Information Provision Working Group for the
 * S-131 ed2.0.0 Release candidate for NIPWG endorsement.
   
 ## 01/2026
-* Inital 2.0.0 PC (Last update: 2026-01-08)
+* Inital 2.0.0 PC (Last update: 2026-01-22)
 * PS, GML schema, PS and DCEG updated with feedback received as of 14 January (Last update: 2026-01-14)
+  * GML schema updatedto add nilReason to nillable attributes (Last update 2026-01-22) 
 * Initial draft of S-158:131 (Last update: 2026-01-14)
 
 ## 12/2025
