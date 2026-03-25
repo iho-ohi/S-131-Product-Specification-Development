@@ -5,7 +5,7 @@
     
     License
     Permission to copy and distribute this document is hereby granted provided that this notice is retained
-    on all copies, and that IHO & the contributors are credited when the material is redistributed or used in
+    on all copies, and that the contributors are credited when the material is redistributed or used in
     part or whole in derivative works.
     Redistributions in binary form must reproduce this notice in the documentation and/or other materials
     provided with the distribution.
@@ -20,7 +20,7 @@
     out of the use of this software, even if advised of the possibility of such damage.
     ============================================================================================= -->
 <!--    =============================================================================================
-    Version 0.1-20250106: Initial version - RMM - Raphael Malyankar (Portolan Sciences LLC)
+    Version 0.1-20260106: Initial version - RMM - Raphael Malyankar (Portolan Sciences LLC)
     Description: Schematron rule to check for existence of xsi:schemaLocation attributes on root elements of XML documents.
     Note       : Validation using Schematron rule files and XML schemas (XSD files) are in principle separate. XML tools
       may apply them in separate steps each requring manual triggering or in a pipeline, depending on the method used to
