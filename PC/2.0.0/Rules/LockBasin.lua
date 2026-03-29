@@ -21,14 +21,9 @@ function LockBasin(feature, featurePortrayal, contextParameters)
 	end
 
 	local featureName = GetFeatureName(feature, contextParameters)
-	if featureName or HasHorizontalClearance(feature) then
+	if featureName then
 		featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontColor:CHBLK')
-		if featureName then
-			featurePortrayal:AddTextInstruction(EncodeString(featureName), 26, 24, viewingGroup, 9)
-			PortrayClearances(feature, featurePortrayal, contextParameters, viewingGroup, 0, -3.51)
-		else
-			PortrayClearances(feature, featurePortrayal, contextParameters, viewingGroup, 0, 0)
-		end
+		featurePortrayal:AddTextInstruction(EncodeString(featureName), 26, 24, viewingGroup, 9)
 	end
 
 	return viewingGroup

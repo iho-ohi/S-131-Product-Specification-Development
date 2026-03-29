@@ -25,7 +25,7 @@ function FloatingDock(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	elseif feature.PrimitiveType == PrimitiveType.Point then
 		viewingGroup = 32410
-		featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:6;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:32410;DrawingPriority:6;DisplayPlane:UnderRADAR')
 		featurePortrayal:AddInstructions('PointInstruction:131INFRM')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
