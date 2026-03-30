@@ -9,7 +9,7 @@ function DockArea(feature, featurePortrayal, contextParameters)
 			viewingGroup = 36020
 
 			featurePortrayal:AddInstructions('ViewingGroup:36020;DrawingPriority:6;DisplayPlane:UnderRADAR')
-			featurePortrayal:AddInstructions('ColorFill:DEPVS')
+			-- featurePortrayal:AddInstructions('ColorFill:DEPVS')
 
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
