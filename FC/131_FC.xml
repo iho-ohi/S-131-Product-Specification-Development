@@ -12,7 +12,7 @@
 	<S100FC:scope>Global coverage of maritime areas</S100FC:scope>
 	<S100FC:fieldOfApplication>Marine Harbour Infrastructure</S100FC:fieldOfApplication>
 	<S100FC:versionNumber>2.0.0</S100FC:versionNumber>
-	<S100FC:versionDate>2026-03-13</S100FC:versionDate>
+	<S100FC:versionDate>2026-09-01</S100FC:versionDate>
 	<S100FC:productId>S-131</S100FC:productId>
 	<S100FC:producer>
 		<S100CI:role>pointOfContact</S100CI:role>
@@ -5576,18 +5576,26 @@
 					<S100FC:label>Ballast Water Exchange</S100FC:label>
 					<S100FC:definition>Discharge and uptake of ballast water.</S100FC:definition>
 					<S100FC:code>17</S100FC:code>
+					<S100FC:definitionReference>
+						<S100FC:sourceIdentifier>3567</S100FC:sourceIdentifier>
+						<S100FC:definitionSource ref="IHOREG"/>
+					</S100FC:definitionReference>
 				</S100FC:listedValue>
 				<S100FC:listedValue>
 					<S100FC:label>Hull Cleaning</S100FC:label>
 					<S100FC:definition>The removal or treatment of biofouling (accumulation of aquatic organisms including microfouling and macrofouling) from a ship's submerged surfaces, including hull and niche areas, conducted either in-water or during dry-docking. The process includes both proactive cleaning (periodic removal of microfouling) and reactive cleaning (removal of micro- and macrofouling as corrective action).</S100FC:definition>
 					<S100FC:code>18</S100FC:code>
+					<S100FC:definitionReference>
+						<S100FC:sourceIdentifier>3608</S100FC:sourceIdentifier>
+						<S100FC:definitionSource ref="IHOREG"/>
+					</S100FC:definitionReference>
 				</S100FC:listedValue>
 				<S100FC:listedValue>
 					<S100FC:label>Scientific Research</S100FC:label>
 					<S100FC:definition>The conduct of observational, sampling, or experimental activities by authorised personnel to collect scientific or environmental data, which may involve the deployment of scientific instruments, collection of biological or geological samples, or in-water survey operations.</S100FC:definition>
 					<S100FC:code>19</S100FC:code>
 					<S100FC:definitionReference>
-						<S100FC:sourceIdentifier>TBD</S100FC:sourceIdentifier>
+						<S100FC:sourceIdentifier>3643</S100FC:sourceIdentifier>
 						<S100FC:definitionSource ref="IHOREG"/>
 					</S100FC:definitionReference>
 				</S100FC:listedValue>
@@ -5596,7 +5604,7 @@
 					<S100FC:definition>Organised recreational visitation and leisure activities in marine areas, including sight-seeing, wildlife observation, glass-bottom vessel tours, and guided nature excursions conducted by commercial or permitted operators.</S100FC:definition>
 					<S100FC:code>20</S100FC:code>
 					<S100FC:definitionReference>
-						<S100FC:sourceIdentifier>TBD</S100FC:sourceIdentifier>
+						<S100FC:sourceIdentifier>3644</S100FC:sourceIdentifier>
 						<S100FC:definitionSource ref="IHOREG"/>
 					</S100FC:definitionReference>
 				</S100FC:listedValue>
@@ -5605,7 +5613,7 @@
 					<S100FC:definition>Structured activities conducted for training, awareness, or interpretive purposes involving groups or individuals learning about the marine environment, including guided educational programs, school activities, and field instruction conducted within designated marine areas.</S100FC:definition>
 					<S100FC:code>21</S100FC:code>
 					<S100FC:definitionReference>
-						<S100FC:sourceIdentifier>TBD</S100FC:sourceIdentifier>
+						<S100FC:sourceIdentifier>3645</S100FC:sourceIdentifier>
 						<S100FC:definitionSource ref="IHOREG"/>
 					</S100FC:definitionReference>
 				</S100FC:listedValue>
@@ -5614,7 +5622,7 @@
 					<S100FC:definition>Inspection, repair, or upkeep of existing marine or coastal infrastructure such as wharves, piers, pipelines, moorings, subsea cables, navigational aids, or coastal protection structures, including minor works that do not expand the original footprint.</S100FC:definition>
 					<S100FC:code>22</S100FC:code>
 					<S100FC:definitionReference>
-						<S100FC:sourceIdentifier>TBD</S100FC:sourceIdentifier>
+						<S100FC:sourceIdentifier>3646</S100FC:sourceIdentifier>
 						<S100FC:definitionSource ref="IHOREG"/>
 					</S100FC:definitionReference>
 				</S100FC:listedValue>
