@@ -1,6 +1,9 @@
 # S-131-Product-Specification-Development
 Collaboration space for IHO Nautical Information Provision Working Group for the development of S-131 Product Specification with its artifacts
 
+<img width="2172" height="724" alt="S-131 Harbour Infrastructure Chart" src="https://github.com/user-attachments/assets/bb075e14-3cfa-4c3e-bcc5-7bbf98a108ef" />
+
+
 ## 10/15/2026
 * S-131 ed2.0.0 Official release.
 
