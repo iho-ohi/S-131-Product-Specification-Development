@@ -3,7 +3,7 @@ Collaboration space for IHO Nautical Information Provision Working Group for the
 
 ## 10/15/2026
 * S-131 ed2.0.0 Official release.
-* 
+
 ## 01/21/2026
 * S-131 ed2.0.0 Release candidate for NIPWG endorsement.
   
