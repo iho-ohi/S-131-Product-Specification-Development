@@ -1,0 +1,30 @@
+-- Feature Catalogue Version: 2.0.0
+-- Developed for S-131 by IIC
+-- require 'S101AttributeSupport'
+
+-- Lock basin main entry point.
+function LockBasin(feature, featurePortrayal, contextParameters)
+	local viewingGroup
+
+	if feature.PrimitiveType == PrimitiveType.Surface then
+		-- Plain and symbolized boundaries use the same symbolization
+		viewingGroup = 31020
+		featurePortrayal:AddInstructions('ViewingGroup:31020;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		featurePortrayal:SimpleLineStyle('solid',0.32,'CHGRD')
+		featurePortrayal:AddInstructions('LineInstruction:_simple_')
+	elseif feature.PrimitiveType == PrimitiveType.Point then
+		viewingGroup = 31020
+		featurePortrayal:AddInstructions('ViewingGroup:31020;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('PointInstruction:131SYMBL3')
+	else
+		error('Invalid primitive type or mariner settings passed to portrayal')
+	end
+
+	local featureName = GetFeatureName(feature, contextParameters)
+	if featureName then
+		featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontColor:CHBLK')
+		featurePortrayal:AddTextInstruction(EncodeString(featureName), 26, 24, viewingGroup, 9)
+	end
+
+	return viewingGroup
+end
